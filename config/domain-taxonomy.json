@@ -1,0 +1,15 @@
+{
+  "domains": {
+    "inss": ["INSS", "consignado INSS", "beneficio", "margem", "averbacao", "Delfos", "CPF irregular"],
+    "margem_nova": ["margem nova", "margem", "consulta margem", "reserva margem", "averbacao"],
+    "refinanciamento": ["refinanciamento", "refin", "REFIN puro", "recalculo refin"],
+    "portabilidade": ["portabilidade", "port", "CIP", "CTC", "Nuclea", "repositorio Nuclea"],
+    "refin_de_portabilidade": ["refin de portabilidade", "refin da port", "refin port", "refinanciamento da portabilidade"],
+    "portabilidade_com_refin": ["portabilidade com refin", "port de refin", "portabilidade refinanciada"],
+    "aumento_margem": ["aumento de margem"]
+  },
+  "cross_cutting": [
+    "esteira", "atividade", "NumeroDecisao", "alcada", "fase", "push", "Message Center",
+    "procedure", "DoR", "DoD", "criterio de aceite", "XML", "INSS"
+  ]
+}

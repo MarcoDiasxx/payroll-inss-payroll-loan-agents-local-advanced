@@ -1,0 +1,1 @@
+"""Esteiras MCP package."""

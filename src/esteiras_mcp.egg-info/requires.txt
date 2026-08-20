@@ -1,0 +1,6 @@
+fastmcp<4,>=3.4
+python-dotenv<2,>=1.0
+requests<3,>=2.32
+beautifulsoup4<5,>=4.12
+openpyxl<4,>=3.1
+truststore<1,>=0.10

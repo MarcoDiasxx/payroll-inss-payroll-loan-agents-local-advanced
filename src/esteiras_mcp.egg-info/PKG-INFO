@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: esteiras-mcp
+Version: 1.0.0
+Summary: MCP read-only para Jira, Confluence e referencias oficiais de esteiras INSS
+Requires-Python: >=3.11
+Requires-Dist: fastmcp<4,>=3.4
+Requires-Dist: python-dotenv<2,>=1.0
+Requires-Dist: requests<3,>=2.32
+Requires-Dist: beautifulsoup4<5,>=4.12
+Requires-Dist: openpyxl<4,>=3.1
+Requires-Dist: truststore<1,>=0.10

@@ -1,0 +1,21 @@
+{
+  "absolute": true,
+  "conflict_policy": "core_wins_and_conflict_is_reported",
+  "required": [
+    {"type": "jira", "id": "BRGN-3563", "purpose": "DoR, DoD, criterios, higienizacao e regras"},
+    {"type": "confluence", "id": "77048086725", "purpose": "norma de Esteiras Funcao"},
+    {"type": "sharepoint_workbook", "env": "OFFICIAL_WORKBOOK_LOCAL_PATH", "purpose": "atividades, decisoes, alcadas, fases e protecoes"},
+    {"type": "repository_policy", "path": "docs/core/esteiras-core-policy.md", "purpose": "regras obrigatorias do agente"}
+  ],
+  "source_order": [
+    "formal_approved_exception",
+    "core_confluence",
+    "core_jira",
+    "official_workbook",
+    "homologated_xsd_or_xml",
+    "approved_related_jira",
+    "related_confluence",
+    "user_input",
+    "historical_example"
+  ]
+}

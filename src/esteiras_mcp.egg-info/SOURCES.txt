@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/esteiras_mcp/__init__.py
+src/esteiras_mcp/atlassian.py
+src/esteiras_mcp/server.py
+src/esteiras_mcp.egg-info/PKG-INFO
+src/esteiras_mcp.egg-info/SOURCES.txt
+src/esteiras_mcp.egg-info/dependency_links.txt
+src/esteiras_mcp.egg-info/requires.txt
+src/esteiras_mcp.egg-info/top_level.txt
+tests/test_text_extract.py

@@ -1,0 +1,16 @@
+[project]
+name = "esteiras-mcp"
+version = "1.0.0"
+description = "MCP read-only para Jira, Confluence e referencias oficiais de esteiras INSS"
+requires-python = ">=3.11"
+dependencies = [
+  "fastmcp>=3.4,<4",
+  "python-dotenv>=1.0,<2",
+  "requests>=2.32,<3",
+  "beautifulsoup4>=4.12,<5",
+  "openpyxl>=3.1,<4",
+  "truststore>=0.10,<1"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
