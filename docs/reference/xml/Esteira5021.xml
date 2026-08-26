@@ -1,43 +1,6 @@
 <?xml version="1.0"?>
-<ModeloDecisaoExportacao NumeroModelo="5001" CodigoDecisaoOriginal="" DataHora="2026-08-25T14:51:00" Descricao="INSS - Refinanciamento [APP]" Usuario="M365_COPILOT" TipoSistema="NaoDefinido">
+<ModeloDecisaoExportacao NumeroModelo="5021" CodigoDecisaoOriginal="" DataHora="2026-08-25T14:51:00" Descricao="INSS - Refin [Tele-vendas]" Usuario="M365_COPILOT" TipoSistema="NaoDefinido">
   <Decisoes>
-    <DecisaoExportacao>
-      <NumeroDecisao>0</NumeroDecisao>
-      <Descricao>AT - Aguarda CCB Assinada</Descricao>
-      <Processo>AGAPREXT</Processo>
-      <Alcada>9</Alcada>
-      <ConsultaAlcada>S</ConsultaAlcada>
-      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
-      <TipoAcao>A</TipoAcao>
-      <Fase>9</Fase>
-      <CondicaoAprovada>SELECT 1 FROM BSGTABCORPEMPR..ELIGIBLE_SIGNATURE_PROPOSAL WITH(NOLOCK) WHERE COD_HASH IS NOT NULL and COD_PROPOSAL_NUMBER=@NRPROP</CondicaoAprovada>
-      <AprovadoVerdadeiro>1</AprovadoVerdadeiro>
-      <AprovadoFalso>66</AprovadoFalso>
-      <AprovadaSituacaoProposta>Andamento</AprovadaSituacaoProposta>
-      <LogAlertaVerdadeiro />
-      <LogAlertaFalso />
-      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
-      <AlcadaFalso>0</AlcadaFalso>
-      <Reprovado>99</Reprovado>
-      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
-      <Pendente>0</Pendente>
-      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
-      <Cancelado>97</Cancelado>
-      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
-      <Reanalise />
-      <TamanhoMinimoObservacao />
-      <TextoObservacao />
-      <TipoObservacao>Observacao</TipoObservacao>
-      <PossuiTela>Nao</PossuiTela>
-      <ParametrosProcesso />
-      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
-      <ConsultaFase>S</ConsultaFase>
-      <PermitirMobile>N</PermitirMobile>
-      <NrSeqMobile>0</NrSeqMobile>
-      <DescricaoProcesso>Aguarda Aprovação Externa</DescricaoProcesso>
-    </DecisaoExportacao>
     <DecisaoExportacao>
       <NumeroDecisao>1</NumeroDecisao>
       <Descricao>AT - Finaliza Proposta</Descricao>
@@ -47,8 +10,8 @@
       <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
       <TipoAcao>A</TipoAcao>
       <Fase>9</Fase>
-      <CondicaoAprovada>EXEC BSGTABCORPEMPR..GNM_PRIVATE_ALTERCREDITCONDITION @NRPROP</CondicaoAprovada>
-      <AprovadoVerdadeiro>201</AprovadoVerdadeiro>
+      <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
+      <AprovadoVerdadeiro>107</AprovadoVerdadeiro>
       <AprovadoFalso />
       <AprovadaSituacaoProposta>Andamento</AprovadaSituacaoProposta>
       <LogAlertaVerdadeiro />
@@ -61,8 +24,8 @@
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -74,43 +37,6 @@
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
       <DescricaoProcesso>Finaliza Proposta</DescricaoProcesso>
-    </DecisaoExportacao>
-    <DecisaoExportacao>
-      <NumeroDecisao>66</NumeroDecisao>
-      <Descricao>AT - Aguarda assinatura 0</Descricao>
-      <Processo>AUTAPR</Processo>
-      <Alcada>9</Alcada>
-      <ConsultaAlcada>S</ConsultaAlcada>
-      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
-      <TipoAcao>P</TipoAcao>
-      <Fase>9</Fase>
-      <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
-      <AprovadoVerdadeiro>0</AprovadoVerdadeiro>
-      <AprovadoFalso />
-      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
-      <LogAlertaVerdadeiro />
-      <LogAlertaFalso />
-      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
-      <AlcadaFalso>0</AlcadaFalso>
-      <Reprovado>99</Reprovado>
-      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
-      <Pendente>98</Pendente>
-      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
-      <Cancelado>97</Cancelado>
-      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
-      <Reanalise />
-      <TamanhoMinimoObservacao />
-      <TextoObservacao />
-      <TipoObservacao>Observacao</TipoObservacao>
-      <PossuiTela>Nao</PossuiTela>
-      <ParametrosProcesso />
-      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
-      <ConsultaFase>S</ConsultaFase>
-      <PermitirMobile>N</PermitirMobile>
-      <NrSeqMobile>0</NrSeqMobile>
-      <DescricaoProcesso>Aprova Proposta Automático</DescricaoProcesso>
     </DecisaoExportacao>
     <DecisaoExportacao>
       <NumeroDecisao>97</NumeroDecisao>
@@ -135,12 +61,12 @@
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>0</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
-      <TipoObservacao>Mensagem</TipoObservacao>
+      <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Nao</PossuiTela>
       <ParametrosProcesso />
       <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
@@ -172,12 +98,12 @@
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>0</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
-      <TipoObservacao>Mensagem</TipoObservacao>
+      <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Nao</PossuiTela>
       <ParametrosProcesso />
       <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
@@ -190,11 +116,11 @@
       <NumeroDecisao>99</NumeroDecisao>
       <Descricao>REP - Reprovação</Descricao>
       <Processo>AUTREP</Processo>
-      <Alcada>9</Alcada>
+      <Alcada>7</Alcada>
       <ConsultaAlcada>S</ConsultaAlcada>
       <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
       <TipoAcao>F</TipoAcao>
-      <Fase>9</Fase>
+      <Fase>7</Fase>
       <CondicaoAprovada />
       <AprovadoVerdadeiro />
       <AprovadoFalso />
@@ -209,12 +135,12 @@
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
-      <TextoObservacao />
-      <TipoObservacao>Mensagem</TipoObservacao>
+      <TextoObservacao>Reprovado - Fora da Politica de Credito</TextoObservacao>
+      <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Nao</PossuiTela>
       <ParametrosProcesso />
       <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
@@ -222,6 +148,154 @@
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
       <DescricaoProcesso>Reprova Proposta Automático</DescricaoProcesso>
+    </DecisaoExportacao>
+    <DecisaoExportacao>
+      <NumeroDecisao>101</NumeroDecisao>
+      <Descricao>AT - Iniciar Formalização</Descricao>
+      <Processo>AUTAPR</Processo>
+      <Alcada>9</Alcada>
+      <ConsultaAlcada>S</ConsultaAlcada>
+      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
+      <TipoAcao>P</TipoAcao>
+      <Fase>9</Fase>
+      <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
+      <AprovadoVerdadeiro>950</AprovadoVerdadeiro>
+      <AprovadoFalso />
+      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
+      <LogAlertaVerdadeiro />
+      <LogAlertaFalso />
+      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
+      <AlcadaFalso>0</AlcadaFalso>
+      <Reprovado>99</Reprovado>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
+      <Pendente>98</Pendente>
+      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
+      <Cancelado>97</Cancelado>
+      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
+      <CodigoMotivoPendente>0</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
+      <Reanalise />
+      <TamanhoMinimoObservacao />
+      <TextoObservacao />
+      <TipoObservacao>Observacao</TipoObservacao>
+      <PossuiTela>Nao</PossuiTela>
+      <ParametrosProcesso />
+      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
+      <ConsultaFase>S</ConsultaFase>
+      <PermitirMobile>N</PermitirMobile>
+      <NrSeqMobile>0</NrSeqMobile>
+      <DescricaoProcesso>Aprova Proposta Automático</DescricaoProcesso>
+    </DecisaoExportacao>
+    <DecisaoExportacao>
+      <NumeroDecisao>104</NumeroDecisao>
+      <Descricao>AT - Valida Aceite</Descricao>
+      <Processo>AUTAPR</Processo>
+      <Alcada>8</Alcada>
+      <ConsultaAlcada>S</ConsultaAlcada>
+      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
+      <TipoAcao>P</TipoAcao>
+      <Fase>8</Fase>
+      <CondicaoAprovada>SELECT 1 FROM BSGTABCORPEMPR..ELIGIBLE_SIGNATURE_PROPOSAL WHERE COD_PROPOSAL_NUMBER = @NRPROP</CondicaoAprovada>
+      <AprovadoVerdadeiro>920</AprovadoVerdadeiro>
+      <AprovadoFalso>951</AprovadoFalso>
+      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
+      <LogAlertaVerdadeiro />
+      <LogAlertaFalso />
+      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
+      <AlcadaFalso>0</AlcadaFalso>
+      <Reprovado>99</Reprovado>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
+      <Pendente>98</Pendente>
+      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
+      <Cancelado>97</Cancelado>
+      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
+      <Reanalise />
+      <TamanhoMinimoObservacao />
+      <TextoObservacao />
+      <TipoObservacao>Observacao</TipoObservacao>
+      <PossuiTela>Nao</PossuiTela>
+      <ParametrosProcesso />
+      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
+      <ConsultaFase>S</ConsultaFase>
+      <PermitirMobile>N</PermitirMobile>
+      <NrSeqMobile>0</NrSeqMobile>
+      <DescricaoProcesso>Aprova Proposta Automático</DescricaoProcesso>
+    </DecisaoExportacao>
+    <DecisaoExportacao>
+      <NumeroDecisao>106</NumeroDecisao>
+      <Descricao>AT - Valida Assinatura</Descricao>
+      <Processo>AUTAPR</Processo>
+      <Alcada>8</Alcada>
+      <ConsultaAlcada>S</ConsultaAlcada>
+      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
+      <TipoAcao>P</TipoAcao>
+      <Fase>8</Fase>
+      <CondicaoAprovada>SELECT 1 FROM BSGTABCORPEMPR..ELIGIBLE_SIGNATURE_PROPOSAL WHERE COD_PROPOSAL_NUMBER = @NRPROP AND DAT_SIGNED_DATE IS NOT NULL</CondicaoAprovada>
+      <AprovadoVerdadeiro>903</AprovadoVerdadeiro>
+      <AprovadoFalso>920</AprovadoFalso>
+      <AprovadaSituacaoProposta>Andamento</AprovadaSituacaoProposta>
+      <LogAlertaVerdadeiro />
+      <LogAlertaFalso />
+      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
+      <AlcadaFalso>0</AlcadaFalso>
+      <Reprovado>99</Reprovado>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
+      <Pendente>98</Pendente>
+      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
+      <Cancelado>97</Cancelado>
+      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
+      <Reanalise />
+      <TamanhoMinimoObservacao />
+      <TextoObservacao />
+      <TipoObservacao>Observacao</TipoObservacao>
+      <PossuiTela>Nao</PossuiTela>
+      <ParametrosProcesso />
+      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
+      <ConsultaFase>S</ConsultaFase>
+      <PermitirMobile>N</PermitirMobile>
+      <NrSeqMobile>0</NrSeqMobile>
+      <DescricaoProcesso>Aprova Proposta Automático</DescricaoProcesso>
+    </DecisaoExportacao>
+    <DecisaoExportacao>
+      <NumeroDecisao>107</NumeroDecisao>
+      <Descricao>LJ - Confirm. Proposta</Descricao>
+      <Processo>CDCONF</Processo>
+      <Alcada>9</Alcada>
+      <ConsultaAlcada>S</ConsultaAlcada>
+      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
+      <TipoAcao>A</TipoAcao>
+      <Fase>9</Fase>
+      <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
+      <AprovadoVerdadeiro>201</AprovadoVerdadeiro>
+      <AprovadoFalso />
+      <AprovadaSituacaoProposta>Andamento</AprovadaSituacaoProposta>
+      <LogAlertaVerdadeiro />
+      <LogAlertaFalso />
+      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
+      <AlcadaFalso>0</AlcadaFalso>
+      <Reprovado>99</Reprovado>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
+      <Pendente />
+      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
+      <Cancelado>97</Cancelado>
+      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
+      <Reanalise />
+      <TamanhoMinimoObservacao />
+      <TextoObservacao>Proposta {nrprop} cadastrada com sucesso!</TextoObservacao>
+      <TipoObservacao>Observacao</TipoObservacao>
+      <PossuiTela>Sim</PossuiTela>
+      <ParametrosProcesso />
+      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
+      <ConsultaFase>S</ConsultaFase>
+      <PermitirMobile>N</PermitirMobile>
+      <NrSeqMobile>0</NrSeqMobile>
+      <DescricaoProcesso>Tela de Confirmação</DescricaoProcesso>
     </DecisaoExportacao>
     <DecisaoExportacao>
       <NumeroDecisao>201</NumeroDecisao>
@@ -232,7 +306,7 @@
       <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
       <TipoAcao>A</TipoAcao>
       <Fase>9</Fase>
-      <CondicaoAprovada>Exec BSGTABCORPEMPR..P_AGE_VALIDATION @NRPROP </CondicaoAprovada>
+      <CondicaoAprovada>Exec BSGTABCORPEMPR..P_AGE_VALIDATION @NRPROP</CondicaoAprovada>
       <AprovadoVerdadeiro>202</AprovadoVerdadeiro>
       <AprovadoFalso>997</AprovadoFalso>
       <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
@@ -246,8 +320,8 @@
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -283,8 +357,8 @@
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -308,7 +382,7 @@
       <Fase>9</Fase>
       <CondicaoAprovada>EXEC BRK_SP_CONSULTA_BENEFICIO_ESP_88_V1 @NRPROP</CondicaoAprovada>
       <AprovadoVerdadeiro>998</AprovadoVerdadeiro>
-      <AprovadoFalso>914</AprovadoFalso>
+      <AprovadoFalso>230</AprovadoFalso>
       <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
       <LogAlertaVerdadeiro />
       <LogAlertaFalso />
@@ -320,8 +394,8 @@
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>109</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -344,7 +418,7 @@
       <TipoAcao>A</TipoAcao>
       <Fase>7</Fase>
       <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
-      <AprovadoVerdadeiro>619</AprovadoVerdadeiro>
+      <AprovadoVerdadeiro>227</AprovadoVerdadeiro>
       <AprovadoFalso />
       <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
       <LogAlertaVerdadeiro />
@@ -353,12 +427,12 @@
       <AlcadaFalso>0</AlcadaFalso>
       <Reprovado>99</Reprovado>
       <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
-      <Pendente>98</Pendente>
+      <Pendente>502</Pendente>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -431,8 +505,8 @@
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>109</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -616,8 +690,8 @@
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -653,8 +727,8 @@
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -690,8 +764,8 @@
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -706,16 +780,15 @@
     </DecisaoExportacao>
     <DecisaoExportacao>
       <NumeroDecisao>221</NumeroDecisao>
-      <Descricao>AT- Verifica paradinha</Descricao>
+      <Descricao>AT - Verifica paradinha</Descricao>
       <Processo>AUTAPR</Processo>
-      <Alcada>9</Alcada>
+      <Alcada>7</Alcada>
       <ConsultaAlcada>S</ConsultaAlcada>
       <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
       <TipoAcao>A</TipoAcao>
-      <Fase>9</Fase>
-      <CondicaoAprovada>EXEC ZER_SP_CONSULTA_LOJAS_V1     
-@nrprop</CondicaoAprovada>
-      <AprovadoVerdadeiro>906</AprovadoVerdadeiro>
+      <Fase>7</Fase>
+      <CondicaoAprovada>EXEC BSGTABCORPEMPR..ZER_SP_PARADINHA_CORBAN_V1 @NRPROP</CondicaoAprovada>
+      <AprovadoVerdadeiro>512</AprovadoVerdadeiro>
       <AprovadoFalso>303</AprovadoFalso>
       <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
       <LogAlertaVerdadeiro />
@@ -728,8 +801,8 @@
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>109</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -760,13 +833,13 @@
       <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
       <AlcadaFalso>0</AlcadaFalso>
       <Reprovado>99</Reprovado>
-      <SituacaoPropostaReprovada>Mantem</SituacaoPropostaReprovada>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
       <Pendente>98</Pendente>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>109</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -804,6 +877,117 @@
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
       <CodigoMotivoPendente>103</CodigoMotivoPendente>
       <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <Reanalise />
+      <TamanhoMinimoObservacao />
+      <TextoObservacao />
+      <TipoObservacao>Observacao</TipoObservacao>
+      <PossuiTela>Nao</PossuiTela>
+      <ParametrosProcesso />
+      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
+      <ConsultaFase>S</ConsultaFase>
+      <PermitirMobile>N</PermitirMobile>
+      <NrSeqMobile>0</NrSeqMobile>
+      <DescricaoProcesso>Aprova Proposta Automático</DescricaoProcesso>
+    </DecisaoExportacao>
+    <DecisaoExportacao>
+      <NumeroDecisao>227</NumeroDecisao>
+      <Descricao>AT - Valida BN Invalidez</Descricao>
+      <Processo>AUTAPR</Processo>
+      <Alcada>7</Alcada>
+      <ConsultaAlcada>S</ConsultaAlcada>
+      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
+      <TipoAcao>A</TipoAcao>
+      <Fase>7</Fase>
+      <CondicaoAprovada>EXEC LAN_SP_CONS_BENEFICIOS_DE_INVALIDEZ_V1 @nrprop</CondicaoAprovada>
+      <AprovadoVerdadeiro>248</AprovadoVerdadeiro>
+      <AprovadoFalso>619</AprovadoFalso>
+      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
+      <LogAlertaVerdadeiro />
+      <LogAlertaFalso />
+      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
+      <AlcadaFalso>0</AlcadaFalso>
+      <Reprovado>99</Reprovado>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
+      <Pendente>98</Pendente>
+      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
+      <Cancelado>97</Cancelado>
+      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
+      <Reanalise />
+      <TamanhoMinimoObservacao />
+      <TextoObservacao />
+      <TipoObservacao>Observacao</TipoObservacao>
+      <PossuiTela>Nao</PossuiTela>
+      <ParametrosProcesso />
+      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
+      <ConsultaFase>S</ConsultaFase>
+      <PermitirMobile>N</PermitirMobile>
+      <NrSeqMobile>0</NrSeqMobile>
+      <DescricaoProcesso>Aprova Proposta Automático</DescricaoProcesso>
+    </DecisaoExportacao>
+    <DecisaoExportacao>
+      <NumeroDecisao>230</NumeroDecisao>
+      <Descricao>AT - Validação de Rep Leg</Descricao>
+      <Processo>AUTAPR</Processo>
+      <Alcada>9</Alcada>
+      <ConsultaAlcada>S</ConsultaAlcada>
+      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
+      <TipoAcao>A</TipoAcao>
+      <Fase>9</Fase>
+      <CondicaoAprovada>EXEC BRK_SP_ESTEIRA_VALIDA_PROCURADOR_INSS @NRPROP</CondicaoAprovada>
+      <AprovadoVerdadeiro>99</AprovadoVerdadeiro>
+      <AprovadoFalso>101</AprovadoFalso>
+      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
+      <LogAlertaVerdadeiro />
+      <LogAlertaFalso />
+      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
+      <AlcadaFalso>0</AlcadaFalso>
+      <Reprovado>99</Reprovado>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
+      <Pendente>98</Pendente>
+      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
+      <Cancelado>97</Cancelado>
+      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
+      <Reanalise />
+      <TamanhoMinimoObservacao />
+      <TextoObservacao />
+      <TipoObservacao>Observacao</TipoObservacao>
+      <PossuiTela>Nao</PossuiTela>
+      <ParametrosProcesso />
+      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
+      <ConsultaFase>S</ConsultaFase>
+      <PermitirMobile>N</PermitirMobile>
+      <NrSeqMobile>0</NrSeqMobile>
+      <DescricaoProcesso>Aprova Proposta Automático</DescricaoProcesso>
+    </DecisaoExportacao>
+    <DecisaoExportacao>
+      <NumeroDecisao>248</NumeroDecisao>
+      <Descricao>AT - Valida Tempo BN</Descricao>
+      <Processo>AUTAPR</Processo>
+      <Alcada>7</Alcada>
+      <ConsultaAlcada>S</ConsultaAlcada>
+      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
+      <TipoAcao>A</TipoAcao>
+      <Fase>7</Fase>
+      <CondicaoAprovada>EXEC BSGTABCORPEMPR..P_VALIDATE_TEMP_BENEF @NRPROP,761</CondicaoAprovada>
+      <AprovadoVerdadeiro>619</AprovadoVerdadeiro>
+      <AprovadoFalso>99</AprovadoFalso>
+      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
+      <LogAlertaVerdadeiro />
+      <LogAlertaFalso />
+      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
+      <AlcadaFalso>0</AlcadaFalso>
+      <Reprovado>99</Reprovado>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
+      <Pendente>98</Pendente>
+      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
+      <Cancelado>97</Cancelado>
+      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -1032,7 +1216,7 @@
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Nao</PossuiTela>
       <ParametrosProcesso />
-      <ConfiguracaoProcesso>25935</ConfiguracaoProcesso>
+      <ConfiguracaoProcesso>25945</ConfiguracaoProcesso>
       <ConsultaFase>S</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
@@ -1111,43 +1295,6 @@
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
       <DescricaoProcesso>Comparação de Valores Digitados X Valores Averbados</DescricaoProcesso>
-    </DecisaoExportacao>
-    <DecisaoExportacao>
-      <NumeroDecisao>309</NumeroDecisao>
-      <Descricao>AT - Valida DT Averbação</Descricao>
-      <Processo>AUTAPR</Processo>
-      <Alcada>4</Alcada>
-      <ConsultaAlcada>S</ConsultaAlcada>
-      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
-      <TipoAcao>A</TipoAcao>
-      <Fase>4</Fase>
-      <CondicaoAprovada>EXEC BRGN_SP_CONSULTA_DATA_AVERB_V1 @NRPROP</CondicaoAprovada>
-      <AprovadoVerdadeiro>517</AprovadoVerdadeiro>
-      <AprovadoFalso>906</AprovadoFalso>
-      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
-      <LogAlertaVerdadeiro />
-      <LogAlertaFalso />
-      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
-      <AlcadaFalso>0</AlcadaFalso>
-      <Reprovado>99</Reprovado>
-      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
-      <Pendente>98</Pendente>
-      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
-      <Cancelado>97</Cancelado>
-      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
-      <Reanalise />
-      <TamanhoMinimoObservacao />
-      <TextoObservacao />
-      <TipoObservacao>Observacao</TipoObservacao>
-      <PossuiTela>Nao</PossuiTela>
-      <ParametrosProcesso />
-      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
-      <ConsultaFase>S</ConsultaFase>
-      <PermitirMobile>N</PermitirMobile>
-      <NrSeqMobile>0</NrSeqMobile>
-      <DescricaoProcesso>Aprova Proposta Automático</DescricaoProcesso>
     </DecisaoExportacao>
     <DecisaoExportacao>
       <NumeroDecisao>421</NumeroDecisao>
@@ -1522,80 +1669,6 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <DescricaoProcesso>Aprova Proposta Automático</DescricaoProcesso>
     </DecisaoExportacao>
     <DecisaoExportacao>
-      <NumeroDecisao>431</NumeroDecisao>
-      <Descricao>AT - Consulta Manual DELF</Descricao>
-      <Processo>CNANMT</Processo>
-      <Alcada>5</Alcada>
-      <ConsultaAlcada>S</ConsultaAlcada>
-      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
-      <TipoAcao>A</TipoAcao>
-      <Fase>5</Fase>
-      <CondicaoAprovada>Verdadeiro</CondicaoAprovada>
-      <AprovadoVerdadeiro>217</AprovadoVerdadeiro>
-      <AprovadoFalso>217</AprovadoFalso>
-      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
-      <LogAlertaVerdadeiro />
-      <LogAlertaFalso />
-      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
-      <AlcadaFalso>0</AlcadaFalso>
-      <Reprovado>99</Reprovado>
-      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
-      <Pendente>431</Pendente>
-      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
-      <Cancelado>97</Cancelado>
-      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
-      <Reanalise />
-      <TamanhoMinimoObservacao />
-      <TextoObservacao>CONSULTAS MANUAIS DERIVAR PARA MESA DE RISCO</TextoObservacao>
-      <TipoObservacao>Observacao</TipoObservacao>
-      <PossuiTela>Sim</PossuiTela>
-      <ParametrosProcesso />
-      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
-      <ConsultaFase>S</ConsultaFase>
-      <PermitirMobile>N</PermitirMobile>
-      <NrSeqMobile>0</NrSeqMobile>
-      <DescricaoProcesso>Análise de Crédito</DescricaoProcesso>
-    </DecisaoExportacao>
-    <DecisaoExportacao>
-      <NumeroDecisao>441</NumeroDecisao>
-      <Descricao>PEN - Pendencia CPF</Descricao>
-      <Processo>AUTPEN</Processo>
-      <Alcada>5</Alcada>
-      <ConsultaAlcada>S</ConsultaAlcada>
-      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
-      <TipoAcao>A</TipoAcao>
-      <Fase>5</Fase>
-      <CondicaoAprovada />
-      <AprovadoVerdadeiro />
-      <AprovadoFalso />
-      <AprovadaSituacaoProposta>Liberada</AprovadaSituacaoProposta>
-      <LogAlertaVerdadeiro />
-      <LogAlertaFalso />
-      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
-      <AlcadaFalso>0</AlcadaFalso>
-      <Reprovado>99</Reprovado>
-      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
-      <Pendente>905</Pendente>
-      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
-      <Cancelado>97</Cancelado>
-      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>11</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
-      <Reanalise />
-      <TamanhoMinimoObservacao />
-      <TextoObservacao />
-      <TipoObservacao>Observacao</TipoObservacao>
-      <PossuiTela>Nao</PossuiTela>
-      <ParametrosProcesso />
-      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
-      <ConsultaFase>S</ConsultaFase>
-      <PermitirMobile>N</PermitirMobile>
-      <NrSeqMobile>0</NrSeqMobile>
-      <DescricaoProcesso>Pendencia Proposta Automático</DescricaoProcesso>
-    </DecisaoExportacao>
-    <DecisaoExportacao>
       <NumeroDecisao>444</NumeroDecisao>
       <Descricao>AT -CPF Irregular Receita</Descricao>
       <Processo>AGAPREXT</Processo>
@@ -1655,15 +1728,15 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Sim</PossuiTela>
       <ParametrosProcesso />
-      <ConfiguracaoProcesso>25936</ConfiguracaoProcesso>
+      <ConfiguracaoProcesso>25946</ConfiguracaoProcesso>
       <ConsultaFase>S</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
@@ -1679,7 +1752,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <TipoAcao>A</TipoAcao>
       <Fase>4</Fase>
       <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
-      <AprovadoVerdadeiro>428</AprovadoVerdadeiro>
+      <AprovadoVerdadeiro>500</AprovadoVerdadeiro>
       <AprovadoFalso />
       <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
       <LogAlertaVerdadeiro />
@@ -1687,20 +1760,57 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
       <AlcadaFalso>0</AlcadaFalso>
       <Reprovado>906</Reprovado>
-      <SituacaoPropostaReprovada>Mantem</SituacaoPropostaReprovada>
-      <Pendente>915</Pendente>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
+      <Pendente>501</Pendente>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Sim</PossuiTela>
       <ParametrosProcesso />
-      <ConfiguracaoProcesso>25937</ConfiguracaoProcesso>
+      <ConfiguracaoProcesso>25947</ConfiguracaoProcesso>
+      <ConsultaFase>S</ConsultaFase>
+      <PermitirMobile>N</PermitirMobile>
+      <NrSeqMobile>0</NrSeqMobile>
+      <DescricaoProcesso>Análise de Crédito</DescricaoProcesso>
+    </DecisaoExportacao>
+    <DecisaoExportacao>
+      <NumeroDecisao>502</NumeroDecisao>
+      <Descricao>MR - Valida Idade</Descricao>
+      <Processo>CNANMT</Processo>
+      <Alcada>7</Alcada>
+      <ConsultaAlcada>S</ConsultaAlcada>
+      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
+      <TipoAcao>A</TipoAcao>
+      <Fase>7</Fase>
+      <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
+      <AprovadoVerdadeiro>227</AprovadoVerdadeiro>
+      <AprovadoFalso />
+      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
+      <LogAlertaVerdadeiro />
+      <LogAlertaFalso />
+      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
+      <AlcadaFalso>0</AlcadaFalso>
+      <Reprovado>99</Reprovado>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
+      <Pendente>98</Pendente>
+      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
+      <Cancelado>97</Cancelado>
+      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
+      <CodigoMotivoPendente>109</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
+      <Reanalise />
+      <TamanhoMinimoObservacao />
+      <TextoObservacao />
+      <TipoObservacao>Observacao</TipoObservacao>
+      <PossuiTela>Sim</PossuiTela>
+      <ParametrosProcesso />
+      <ConfiguracaoProcesso>25948</ConfiguracaoProcesso>
       <ConsultaFase>S</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
@@ -1729,15 +1839,15 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Sim</PossuiTela>
       <ParametrosProcesso />
-      <ConfiguracaoProcesso>25937</ConfiguracaoProcesso>
+      <ConfiguracaoProcesso>25947</ConfiguracaoProcesso>
       <ConsultaFase>S</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
@@ -1803,15 +1913,15 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Sim</PossuiTela>
       <ParametrosProcesso />
-      <ConfiguracaoProcesso>25938</ConfiguracaoProcesso>
+      <ConfiguracaoProcesso>25949</ConfiguracaoProcesso>
       <ConsultaFase>S</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
@@ -1848,7 +1958,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Sim</PossuiTela>
       <ParametrosProcesso />
-      <ConfiguracaoProcesso>25939</ConfiguracaoProcesso>
+      <ConfiguracaoProcesso>25950</ConfiguracaoProcesso>
       <ConsultaFase>S</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
@@ -1877,15 +1987,15 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Sim</PossuiTela>
       <ParametrosProcesso />
-      <ConfiguracaoProcesso>25939</ConfiguracaoProcesso>
+      <ConfiguracaoProcesso>25946</ConfiguracaoProcesso>
       <ConsultaFase>S</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
@@ -1909,20 +2019,20 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
       <AlcadaFalso>0</AlcadaFalso>
       <Reprovado>906</Reprovado>
-      <SituacaoPropostaReprovada>Mantem</SituacaoPropostaReprovada>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
       <Pendente>915</Pendente>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Sim</PossuiTela>
       <ParametrosProcesso />
-      <ConfiguracaoProcesso>25936</ConfiguracaoProcesso>
+      <ConfiguracaoProcesso>25946</ConfiguracaoProcesso>
       <ConsultaFase>S</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
@@ -1946,20 +2056,20 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
       <AlcadaFalso>0</AlcadaFalso>
       <Reprovado>907</Reprovado>
-      <SituacaoPropostaReprovada>Mantem</SituacaoPropostaReprovada>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
       <Pendente>904</Pendente>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Sim</PossuiTela>
       <ParametrosProcesso />
-      <ConfiguracaoProcesso>25936</ConfiguracaoProcesso>
+      <ConfiguracaoProcesso>25946</ConfiguracaoProcesso>
       <ConsultaFase>S</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
@@ -1983,20 +2093,20 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
       <AlcadaFalso>0</AlcadaFalso>
       <Reprovado>907</Reprovado>
-      <SituacaoPropostaReprovada>Mantem</SituacaoPropostaReprovada>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
       <Pendente>904</Pendente>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Sim</PossuiTela>
       <ParametrosProcesso />
-      <ConfiguracaoProcesso>25936</ConfiguracaoProcesso>
+      <ConfiguracaoProcesso>25946</ConfiguracaoProcesso>
       <ConsultaFase>S</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
@@ -2033,81 +2143,44 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Sim</PossuiTela>
       <ParametrosProcesso />
-      <ConfiguracaoProcesso>25940</ConfiguracaoProcesso>
+      <ConfiguracaoProcesso>25951</ConfiguracaoProcesso>
       <ConsultaFase>S</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
       <DescricaoProcesso>Análise de Valores Digitados X Valores Averbados</DescricaoProcesso>
     </DecisaoExportacao>
     <DecisaoExportacao>
-      <NumeroDecisao>515</NumeroDecisao>
-      <Descricao>Sust HY - Análise Manual</Descricao>
+      <NumeroDecisao>512</NumeroDecisao>
+      <Descricao>CB - Análise CorBan</Descricao>
       <Processo>CNANMT</Processo>
-      <Alcada>4</Alcada>
+      <Alcada>7</Alcada>
       <ConsultaAlcada>S</ConsultaAlcada>
       <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
       <TipoAcao>A</TipoAcao>
-      <Fase>4</Fase>
+      <Fase>10</Fase>
       <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
-      <AprovadoVerdadeiro>221</AprovadoVerdadeiro>
+      <AprovadoVerdadeiro>303</AprovadoVerdadeiro>
       <AprovadoFalso />
       <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
       <LogAlertaVerdadeiro />
       <LogAlertaFalso />
       <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
       <AlcadaFalso>0</AlcadaFalso>
-      <Reprovado>99</Reprovado>
-      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
-      <Pendente>303</Pendente>
-      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
-      <Cancelado>97</Cancelado>
-      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
-      <Reanalise />
-      <TamanhoMinimoObservacao />
-      <TextoObservacao>Proposta analisada manualmente devido a crítica de HY - contrato inexistente.</TextoObservacao>
-      <TipoObservacao>Observacao</TipoObservacao>
-      <PossuiTela>Sim</PossuiTela>
-      <ParametrosProcesso />
-      <ConfiguracaoProcesso>25941</ConfiguracaoProcesso>
-      <ConsultaFase>S</ConsultaFase>
-      <PermitirMobile>N</PermitirMobile>
-      <NrSeqMobile>0</NrSeqMobile>
-      <DescricaoProcesso>Análise de Crédito</DescricaoProcesso>
-    </DecisaoExportacao>
-    <DecisaoExportacao>
-      <NumeroDecisao>517</NumeroDecisao>
-      <Descricao>ST - Aguarda Reversão</Descricao>
-      <Processo>CNANMT</Processo>
-      <Alcada>4</Alcada>
-      <ConsultaAlcada>S</ConsultaAlcada>
-      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
-      <TipoAcao>A</TipoAcao>
-      <Fase>4</Fase>
-      <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
-      <AprovadoVerdadeiro>999</AprovadoVerdadeiro>
-      <AprovadoFalso />
-      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
-      <LogAlertaVerdadeiro />
-      <LogAlertaFalso />
-      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
-      <AlcadaFalso>0</AlcadaFalso>
-      <Reprovado>99</Reprovado>
+      <Reprovado>906</Reprovado>
       <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
       <Pendente>98</Pendente>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>109</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Sim</PossuiTela>
       <ParametrosProcesso />
-      <ConfiguracaoProcesso>25942</ConfiguracaoProcesso>
+      <ConfiguracaoProcesso>25952</ConfiguracaoProcesso>
       <ConsultaFase>S</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
@@ -2132,19 +2205,19 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <AlcadaFalso>0</AlcadaFalso>
       <Reprovado>99</Reprovado>
       <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
-      <Pendente>989</Pendente>
+      <Pendente>799</Pendente>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>109</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Nao</PossuiTela>
       <ParametrosProcesso />
-      <ConfiguracaoProcesso>25943</ConfiguracaoProcesso>
+      <ConfiguracaoProcesso>25955</ConfiguracaoProcesso>
       <ConsultaFase>S</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
@@ -2169,19 +2242,19 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <AlcadaFalso>0</AlcadaFalso>
       <Reprovado>99</Reprovado>
       <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
-      <Pendente>989</Pendente>
+      <Pendente>799</Pendente>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>109</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Nao</PossuiTela>
       <ParametrosProcesso />
-      <ConfiguracaoProcesso>25943</ConfiguracaoProcesso>
+      <ConfiguracaoProcesso>25955</ConfiguracaoProcesso>
       <ConsultaFase>S</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
@@ -2199,7 +2272,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
       <AprovadoVerdadeiro>224</AprovadoVerdadeiro>
       <AprovadoFalso />
-      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
+      <AprovadaSituacaoProposta>Liberada</AprovadaSituacaoProposta>
       <LogAlertaVerdadeiro />
       <LogAlertaFalso />
       <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
@@ -2211,7 +2284,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
       <CodigoMotivoPendente>101</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -2225,6 +2298,43 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <DescricaoProcesso>Liberação AutBank Tesouraria</DescricaoProcesso>
     </DecisaoExportacao>
     <DecisaoExportacao>
+      <NumeroDecisao>799</NumeroDecisao>
+      <Descricao>Reprovação após recálculo</Descricao>
+      <Processo>AUTAPR</Processo>
+      <Alcada>7</Alcada>
+      <ConsultaAlcada>S</ConsultaAlcada>
+      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
+      <TipoAcao>A</TipoAcao>
+      <Fase>7</Fase>
+      <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
+      <AprovadoVerdadeiro>906</AprovadoVerdadeiro>
+      <AprovadoFalso />
+      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
+      <LogAlertaVerdadeiro />
+      <LogAlertaFalso />
+      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
+      <AlcadaFalso>0</AlcadaFalso>
+      <Reprovado>99</Reprovado>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
+      <Pendente>98</Pendente>
+      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
+      <Cancelado>97</Cancelado>
+      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
+      <Reanalise />
+      <TamanhoMinimoObservacao />
+      <TextoObservacao>Reprovação de proposta por falta de condições comerciais após tentativa de recálculo</TextoObservacao>
+      <TipoObservacao>Observacao</TipoObservacao>
+      <PossuiTela>Nao</PossuiTela>
+      <ParametrosProcesso />
+      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
+      <ConsultaFase>S</ConsultaFase>
+      <PermitirMobile>N</PermitirMobile>
+      <NrSeqMobile>0</NrSeqMobile>
+      <DescricaoProcesso>Aprova Proposta Automático</DescricaoProcesso>
+    </DecisaoExportacao>
+    <DecisaoExportacao>
       <NumeroDecisao>800</NumeroDecisao>
       <Descricao>AT - Integra Backoffice</Descricao>
       <Processo>REMESSSPROCCOMP</Processo>
@@ -2235,7 +2345,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <Fase>3</Fase>
       <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
       <AprovadoVerdadeiro>801</AprovadoVerdadeiro>
-      <AprovadoFalso>801</AprovadoFalso>
+      <AprovadoFalso />
       <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
       <LogAlertaVerdadeiro />
       <LogAlertaFalso />
@@ -2247,7 +2357,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
       <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
@@ -2285,7 +2395,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
       <CodigoMotivoPendente>101</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao>Proposta {nrprop} integrada com sucesso! Contrato {nroper}</TextoObservacao>
@@ -2300,7 +2410,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
     </DecisaoExportacao>
     <DecisaoExportacao>
       <NumeroDecisao>902</NumeroDecisao>
-      <Descricao>AT - Push Prop Aprovada</Descricao>
+      <Descricao>AT- Push Prop Aprovada</Descricao>
       <Processo>AGAPREXT</Processo>
       <Alcada>3</Alcada>
       <ConsultaAlcada>S</ConsultaAlcada>
@@ -2321,8 +2431,8 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -2358,8 +2468,8 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>0</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -2395,8 +2505,8 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -2416,7 +2526,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <Alcada>5</Alcada>
       <ConsultaAlcada>S</ConsultaAlcada>
       <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
-      <TipoAcao>A</TipoAcao>
+      <TipoAcao>P</TipoAcao>
       <Fase>5</Fase>
       <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
       <AprovadoVerdadeiro>444</AprovadoVerdadeiro>
@@ -2432,8 +2542,8 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>11</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -2451,7 +2561,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <Descricao>AT - Envio Push Reprova</Descricao>
       <Processo>AUTAPR</Processo>
       <Alcada>7</Alcada>
-      <ConsultaAlcada>S</ConsultaAlcada>
+      <ConsultaAlcada>N</ConsultaAlcada>
       <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
       <TipoAcao>P</TipoAcao>
       <Fase>7</Fase>
@@ -2469,8 +2579,8 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -2478,7 +2588,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <PossuiTela>Nao</PossuiTela>
       <ParametrosProcesso />
       <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
-      <ConsultaFase>S</ConsultaFase>
+      <ConsultaFase>N</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
       <DescricaoProcesso>Aprova Proposta Automático</DescricaoProcesso>
@@ -2506,8 +2616,8 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -2617,8 +2727,8 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -2638,7 +2748,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <Alcada>7</Alcada>
       <ConsultaAlcada>S</ConsultaAlcada>
       <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
-      <TipoAcao>A</TipoAcao>
+      <TipoAcao>P</TipoAcao>
       <Fase>7</Fase>
       <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
       <AprovadoVerdadeiro>507</AprovadoVerdadeiro>
@@ -2654,8 +2764,8 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -2672,50 +2782,13 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <NumeroDecisao>913</NumeroDecisao>
       <Descricao>AT - Envio Push Prop Apro</Descricao>
       <Processo>AUTAPR</Processo>
-      <Alcada>4</Alcada>
+      <Alcada>3</Alcada>
       <ConsultaAlcada>S</ConsultaAlcada>
       <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
       <TipoAcao>P</TipoAcao>
-      <Fase>40</Fase>
+      <Fase>3</Fase>
       <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
       <AprovadoVerdadeiro>902</AprovadoVerdadeiro>
-      <AprovadoFalso />
-      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
-      <LogAlertaVerdadeiro />
-      <LogAlertaFalso />
-      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
-      <AlcadaFalso>0</AlcadaFalso>
-      <Reprovado>99</Reprovado>
-      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
-      <Pendente>98</Pendente>
-      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
-      <Cancelado>97</Cancelado>
-      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
-      <Reanalise />
-      <TamanhoMinimoObservacao />
-      <TextoObservacao />
-      <TipoObservacao>Observacao</TipoObservacao>
-      <PossuiTela>Nao</PossuiTela>
-      <ParametrosProcesso />
-      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
-      <ConsultaFase>S</ConsultaFase>
-      <PermitirMobile>N</PermitirMobile>
-      <NrSeqMobile>0</NrSeqMobile>
-      <DescricaoProcesso>Aprova Proposta Automático</DescricaoProcesso>
-    </DecisaoExportacao>
-    <DecisaoExportacao>
-      <NumeroDecisao>914</NumeroDecisao>
-      <Descricao>AT - Aguarda Push Analise</Descricao>
-      <Processo>AUTAPR</Processo>
-      <Alcada>9</Alcada>
-      <ConsultaAlcada>S</ConsultaAlcada>
-      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
-      <TipoAcao>P</TipoAcao>
-      <Fase>9</Fase>
-      <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
-      <AprovadoVerdadeiro>903</AprovadoVerdadeiro>
       <AprovadoFalso />
       <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
       <LogAlertaVerdadeiro />
@@ -2744,7 +2817,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
     </DecisaoExportacao>
     <DecisaoExportacao>
       <NumeroDecisao>915</NumeroDecisao>
-      <Descricao>AT - Envio Push Avanço de</Descricao>
+      <Descricao>AT - Envio Push Pendência</Descricao>
       <Processo>AUTAPR</Processo>
       <Alcada>4</Alcada>
       <ConsultaAlcada>S</ConsultaAlcada>
@@ -2765,8 +2838,8 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -2778,6 +2851,117 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
       <DescricaoProcesso>Aprova Proposta Automático</DescricaoProcesso>
+    </DecisaoExportacao>
+    <DecisaoExportacao>
+      <NumeroDecisao>920</NumeroDecisao>
+      <Descricao>AT - Assinatura</Descricao>
+      <Processo>AGAPREXT</Processo>
+      <Alcada>8</Alcada>
+      <ConsultaAlcada>S</ConsultaAlcada>
+      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
+      <TipoAcao>A</TipoAcao>
+      <Fase>8</Fase>
+      <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
+      <AprovadoVerdadeiro>106</AprovadoVerdadeiro>
+      <AprovadoFalso />
+      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
+      <LogAlertaVerdadeiro />
+      <LogAlertaFalso />
+      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
+      <AlcadaFalso>0</AlcadaFalso>
+      <Reprovado>99</Reprovado>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
+      <Pendente>98</Pendente>
+      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
+      <Cancelado>97</Cancelado>
+      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
+      <Reanalise />
+      <TamanhoMinimoObservacao />
+      <TextoObservacao />
+      <TipoObservacao>Observacao</TipoObservacao>
+      <PossuiTela>Nao</PossuiTela>
+      <ParametrosProcesso />
+      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
+      <ConsultaFase>S</ConsultaFase>
+      <PermitirMobile>N</PermitirMobile>
+      <NrSeqMobile>0</NrSeqMobile>
+      <DescricaoProcesso>Aguarda Aprovação Externa</DescricaoProcesso>
+    </DecisaoExportacao>
+    <DecisaoExportacao>
+      <NumeroDecisao>950</NumeroDecisao>
+      <Descricao>AT -Envia SMS Instala APP</Descricao>
+      <Processo>AGAPREXT</Processo>
+      <Alcada>8</Alcada>
+      <ConsultaAlcada>S</ConsultaAlcada>
+      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
+      <TipoAcao>P</TipoAcao>
+      <Fase>8</Fase>
+      <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
+      <AprovadoVerdadeiro>951</AprovadoVerdadeiro>
+      <AprovadoFalso />
+      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
+      <LogAlertaVerdadeiro />
+      <LogAlertaFalso />
+      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
+      <AlcadaFalso>0</AlcadaFalso>
+      <Reprovado>99</Reprovado>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
+      <Pendente>98</Pendente>
+      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
+      <Cancelado>97</Cancelado>
+      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
+      <CodigoMotivoPendente>0</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
+      <Reanalise />
+      <TamanhoMinimoObservacao />
+      <TextoObservacao />
+      <TipoObservacao>Observacao</TipoObservacao>
+      <PossuiTela>Nao</PossuiTela>
+      <ParametrosProcesso />
+      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
+      <ConsultaFase>S</ConsultaFase>
+      <PermitirMobile>N</PermitirMobile>
+      <NrSeqMobile>0</NrSeqMobile>
+      <DescricaoProcesso>Aguarda Aprovação Externa</DescricaoProcesso>
+    </DecisaoExportacao>
+    <DecisaoExportacao>
+      <NumeroDecisao>951</NumeroDecisao>
+      <Descricao>AT - Aceite</Descricao>
+      <Processo>AGAPREXT</Processo>
+      <Alcada>8</Alcada>
+      <ConsultaAlcada>S</ConsultaAlcada>
+      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
+      <TipoAcao>A</TipoAcao>
+      <Fase>8</Fase>
+      <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
+      <AprovadoVerdadeiro>104</AprovadoVerdadeiro>
+      <AprovadoFalso />
+      <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
+      <LogAlertaVerdadeiro />
+      <LogAlertaFalso />
+      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
+      <AlcadaFalso>0</AlcadaFalso>
+      <Reprovado>99</Reprovado>
+      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
+      <Pendente>989</Pendente>
+      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
+      <Cancelado>97</Cancelado>
+      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
+      <Reanalise />
+      <TamanhoMinimoObservacao />
+      <TextoObservacao />
+      <TipoObservacao>Observacao</TipoObservacao>
+      <PossuiTela>Nao</PossuiTela>
+      <ParametrosProcesso />
+      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
+      <ConsultaFase>S</ConsultaFase>
+      <PermitirMobile>N</PermitirMobile>
+      <NrSeqMobile>0</NrSeqMobile>
+      <DescricaoProcesso>Aguarda Aprovação Externa</DescricaoProcesso>
     </DecisaoExportacao>
     <DecisaoExportacao>
       <NumeroDecisao>981</NumeroDecisao>
@@ -2802,8 +2986,8 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao />
@@ -2818,15 +3002,15 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
     </DecisaoExportacao>
     <DecisaoExportacao>
       <NumeroDecisao>989</NumeroDecisao>
-      <Descricao>Reprovação após recálculo</Descricao>
-      <Processo>AUTAPR</Processo>
+      <Descricao>AT - Retorna para SMS</Descricao>
+      <Processo>AGAPREXT</Processo>
       <Alcada>8</Alcada>
       <ConsultaAlcada>S</ConsultaAlcada>
       <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
-      <TipoAcao>A</TipoAcao>
+      <TipoAcao>P</TipoAcao>
       <Fase>8</Fase>
       <CondicaoAprovada>VERDADEIRO</CondicaoAprovada>
-      <AprovadoVerdadeiro>906</AprovadoVerdadeiro>
+      <AprovadoVerdadeiro>950</AprovadoVerdadeiro>
       <AprovadoFalso />
       <AprovadaSituacaoProposta>Mantem</AprovadaSituacaoProposta>
       <LogAlertaVerdadeiro />
@@ -2835,15 +3019,15 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <AlcadaFalso>0</AlcadaFalso>
       <Reprovado>99</Reprovado>
       <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
-      <Pendente>98</Pendente>
+      <Pendente>950</Pendente>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
-      <TextoObservacao>Proposta reprovada por falta de condições comerciais após tentativa de recálculo</TextoObservacao>
+      <TextoObservacao />
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Nao</PossuiTela>
       <ParametrosProcesso />
@@ -2851,7 +3035,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <ConsultaFase>S</ConsultaFase>
       <PermitirMobile>N</PermitirMobile>
       <NrSeqMobile>0</NrSeqMobile>
-      <DescricaoProcesso>Aprova Proposta Automático</DescricaoProcesso>
+      <DescricaoProcesso>Aguarda Aprovação Externa</DescricaoProcesso>
     </DecisaoExportacao>
     <DecisaoExportacao>
       <NumeroDecisao>991</NumeroDecisao>
@@ -2877,10 +3061,10 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
       <CodigoMotivoPendente>101</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
-      <TextoObservacao>Reprovada - Fora da Politica da Averbadora</TextoObservacao>
+      <TextoObservacao />
       <TipoObservacao>Observacao</TipoObservacao>
       <PossuiTela>Nao</PossuiTela>
       <ParametrosProcesso />
@@ -2913,8 +3097,8 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao>Reprovação - Conta benefício inválida</TextoObservacao>
@@ -2950,8 +3134,8 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>11</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao>CPF Irregular na Receita</TextoObservacao>
@@ -2971,7 +3155,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <Alcada>7</Alcada>
       <ConsultaAlcada>S</ConsultaAlcada>
       <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
-      <TipoAcao>A</TipoAcao>
+      <TipoAcao>P</TipoAcao>
       <Fase>7</Fase>
       <CondicaoAprovada />
       <AprovadoVerdadeiro />
@@ -2981,14 +3165,14 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <LogAlertaFalso />
       <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
       <AlcadaFalso>0</AlcadaFalso>
-      <Reprovado>906</Reprovado>
+      <Reprovado>907</Reprovado>
       <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
       <Pendente />
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao>Reprovação - Cliente sem margem disponível</TextoObservacao>
@@ -3018,14 +3202,14 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <LogAlertaFalso />
       <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
       <AlcadaFalso>0</AlcadaFalso>
-      <Reprovado>906</Reprovado>
+      <Reprovado>99</Reprovado>
       <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
       <Pendente />
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>28</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao>Reprovação - Fora da política de cartão magnético</TextoObservacao>
@@ -3055,14 +3239,14 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <LogAlertaFalso />
       <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
       <AlcadaFalso>0</AlcadaFalso>
-      <Reprovado>906</Reprovado>
+      <Reprovado>99</Reprovado>
       <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
       <Pendente />
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>0</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao>Reprovado por limite de idade: acima de 74 anos na contratação ou superior a 81 anos ao término do pagamento</TextoObservacao>
@@ -3092,14 +3276,14 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <LogAlertaFalso />
       <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
       <AlcadaFalso>0</AlcadaFalso>
-      <Reprovado>906</Reprovado>
+      <Reprovado>99</Reprovado>
       <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
       <Pendente />
       <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
       <Cancelado>97</Cancelado>
       <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>103</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
+      <CodigoMotivoPendente>101</CodigoMotivoPendente>
+      <CodigoMotivoReprovada>28</CodigoMotivoReprovada>
       <Reanalise />
       <TamanhoMinimoObservacao />
       <TextoObservacao>Reprovação - Fora da política do benefício </TextoObservacao>
@@ -3112,46 +3296,9 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
       <NrSeqMobile>0</NrSeqMobile>
       <DescricaoProcesso>Reprova Proposta Automático</DescricaoProcesso>
     </DecisaoExportacao>
-    <DecisaoExportacao>
-      <NumeroDecisao>999</NumeroDecisao>
-      <Descricao>REP - Reversão Manual</Descricao>
-      <Processo>AUTREP</Processo>
-      <Alcada>9</Alcada>
-      <ConsultaAlcada>S</ConsultaAlcada>
-      <AprovacaoConsecutiva>S</AprovacaoConsecutiva>
-      <TipoAcao>A</TipoAcao>
-      <Fase>9</Fase>
-      <CondicaoAprovada />
-      <AprovadoVerdadeiro />
-      <AprovadoFalso />
-      <AprovadaSituacaoProposta>Liberada</AprovadaSituacaoProposta>
-      <LogAlertaVerdadeiro />
-      <LogAlertaFalso />
-      <AlcadaVerdadeiro>0</AlcadaVerdadeiro>
-      <AlcadaFalso>0</AlcadaFalso>
-      <Reprovado>99</Reprovado>
-      <SituacaoPropostaReprovada>Reprovada</SituacaoPropostaReprovada>
-      <Pendente />
-      <SituacaoPropostaPendente>Pendente</SituacaoPropostaPendente>
-      <Cancelado>97</Cancelado>
-      <SituacaoPropostaCancelada>Cancelada</SituacaoPropostaCancelada>
-      <CodigoMotivoPendente>101</CodigoMotivoPendente>
-      <CodigoMotivoReprovada>12</CodigoMotivoReprovada>
-      <Reanalise />
-      <TamanhoMinimoObservacao />
-      <TextoObservacao>Reprovado - Fora da Politica da Averbadora</TextoObservacao>
-      <TipoObservacao>Observacao</TipoObservacao>
-      <PossuiTela>Nao</PossuiTela>
-      <ParametrosProcesso />
-      <ConfiguracaoProcesso>0</ConfiguracaoProcesso>
-      <ConsultaFase>S</ConsultaFase>
-      <PermitirMobile>N</PermitirMobile>
-      <NrSeqMobile>0</NrSeqMobile>
-      <DescricaoProcesso>Reprova Proposta Automático</DescricaoProcesso>
-    </DecisaoExportacao>
   </Decisoes>
   <ConfiguracaoProcessoExportacao>
-    <ConfiguracaoProcessoExportacao Codigo="25935">
+    <ConfiguracaoProcessoExportacao Codigo="25945">
       <Descricao>Retorno averbacao</Descricao>
       <TipoTela>SemTela</TipoTela>
       <Processo>RETAVERBPROP</Processo>
@@ -3183,7 +3330,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
         </ConfiguracaoProcessoParametroValorExportacao>
       </ParametrosValores>
     </ConfiguracaoProcessoExportacao>
-    <ConfiguracaoProcessoExportacao Codigo="25936">
+    <ConfiguracaoProcessoExportacao Codigo="25946">
       <Descricao>Análise de Crédito</Descricao>
       <TipoTela>Lapela</TipoTela>
       <Processo>CNANMT</Processo>
@@ -3725,7 +3872,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
         </ConfiguracaoProcessoParametroValorExportacao>
       </ParametrosValores>
     </ConfiguracaoProcessoExportacao>
-    <ConfiguracaoProcessoExportacao Codigo="25937">
+    <ConfiguracaoProcessoExportacao Codigo="25947">
       <Descricao>Análise de Crédito</Descricao>
       <TipoTela>Lapela</TipoTela>
       <Processo>CNANMT</Processo>
@@ -4406,7 +4553,187 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
         </ConfiguracaoProcessoParametroValorExportacao>
       </ParametrosValores>
     </ConfiguracaoProcessoExportacao>
-    <ConfiguracaoProcessoExportacao Codigo="25938">
+    <ConfiguracaoProcessoExportacao Codigo="25948">
+      <Descricao>Análise de Crédito</Descricao>
+      <TipoTela>Lapela</TipoTela>
+      <Processo>CNANMT</Processo>
+      <TituloTela>Análise de Crédito</TituloTela>
+      <TipoAlinhamento>Esquerda</TipoAlinhamento>
+      <UsuarioCadastro>SUPERVISOR</UsuarioCadastro>
+      <UsuarioUltimaManutencao>WFREIRE</UsuarioUltimaManutencao>
+      <DataCadastro>2011-04-13T00:00:00</DataCadastro>
+      <DataUltimaManutencao>2018-05-30T00:00:00</DataUltimaManutencao>
+      <Situacao>Ativo</Situacao>
+      <Lapelas>
+        <ConfiguracaoProcessoLapelaExportacao>
+          <Sequencial>1</Sequencial>
+          <Descricao>Financiamento</Descricao>
+        </ConfiguracaoProcessoLapelaExportacao>
+        <ConfiguracaoProcessoLapelaExportacao>
+          <Sequencial>2</Sequencial>
+          <Descricao>Cliente</Descricao>
+        </ConfiguracaoProcessoLapelaExportacao>
+        <ConfiguracaoProcessoLapelaExportacao>
+          <Sequencial>3</Sequencial>
+          <Descricao>Liberações</Descricao>
+        </ConfiguracaoProcessoLapelaExportacao>
+      </Lapelas>
+      <LapelasItens>
+        <ConfiguracaoProcessoLapelaItemExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <Sequencial>1</Sequencial>
+          <PathUserControl>~/Lib/UserControl/Processo/UcDadosFinanciamento.ascx</PathUserControl>
+          <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfDadosFinanciamento.ascx</PathUserControlConfiguracao>
+        </ConfiguracaoProcessoLapelaItemExportacao>
+        <ConfiguracaoProcessoLapelaItemExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <Sequencial>4</Sequencial>
+          <PathUserControl>~/Lib/UserControl/Processo/UcAprRepPenVol.ascx</PathUserControl>
+          <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfAprRepPenVol.ascx</PathUserControlConfiguracao>
+        </ConfiguracaoProcessoLapelaItemExportacao>
+        <ConfiguracaoProcessoLapelaItemExportacao>
+          <SequencialLapela>2</SequencialLapela>
+          <Sequencial>2</Sequencial>
+          <PathUserControl>~/Lib/UserControl/Processo/UcDadosCadastrais.ascx</PathUserControl>
+          <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfDadosCadastrais.ascx</PathUserControlConfiguracao>
+        </ConfiguracaoProcessoLapelaItemExportacao>
+        <ConfiguracaoProcessoLapelaItemExportacao>
+          <SequencialLapela>3</SequencialLapela>
+          <Sequencial>3</Sequencial>
+          <PathUserControl>~/Lib/UserControl/Processo/UcDadosLiberacoes.ascx</PathUserControl>
+          <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfDadosLiberacoes.ascx</PathUserControlConfiguracao>
+        </ConfiguracaoProcessoLapelaItemExportacao>
+      </LapelasItens>
+      <LapelasItensValores>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>1</SequencialItem>
+          <Sequencial>1</Sequencial>
+          <Controle>txtTitulo</Controle>
+          <Valor>Financiamento</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>1</SequencialItem>
+          <Sequencial>2</Sequencial>
+          <Controle>cboAlinhaPara</Controle>
+          <Valor>C</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>1</SequencialItem>
+          <Sequencial>3</Sequencial>
+          <Controle>cboExibirPara</Controle>
+          <Valor>T</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>1</SequencialItem>
+          <Sequencial>4</Sequencial>
+          <Controle>cboExibirTitulo</Controle>
+          <Valor>S</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>4</SequencialItem>
+          <Sequencial>5</Sequencial>
+          <Controle>dltBotoes</Controle>
+          <Valor>Aprova|Pendente|Reprova|Voltar</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>2</SequencialLapela>
+          <SequencialItem>2</SequencialItem>
+          <Sequencial>6</Sequencial>
+          <Controle>txtTitulo</Controle>
+          <Valor>Cliente</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>2</SequencialLapela>
+          <SequencialItem>2</SequencialItem>
+          <Sequencial>7</Sequencial>
+          <Controle>cboAlinhaPara</Controle>
+          <Valor>C</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>2</SequencialLapela>
+          <SequencialItem>2</SequencialItem>
+          <Sequencial>8</Sequencial>
+          <Controle>cboExibirPara</Controle>
+          <Valor>T</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>2</SequencialLapela>
+          <SequencialItem>2</SequencialItem>
+          <Sequencial>9</Sequencial>
+          <Controle>cboExibirTitulo</Controle>
+          <Valor>S</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>2</SequencialLapela>
+          <SequencialItem>2</SequencialItem>
+          <Sequencial>10</Sequencial>
+          <Controle>cboDados</Controle>
+          <Valor>Cliente</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>3</SequencialLapela>
+          <SequencialItem>3</SequencialItem>
+          <Sequencial>11</Sequencial>
+          <Controle>txtTitulo</Controle>
+          <Valor>Liberações</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>3</SequencialLapela>
+          <SequencialItem>3</SequencialItem>
+          <Sequencial>12</Sequencial>
+          <Controle>cboAlinhaPara</Controle>
+          <Valor>C</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>3</SequencialLapela>
+          <SequencialItem>3</SequencialItem>
+          <Sequencial>13</Sequencial>
+          <Controle>cboExibirPara</Controle>
+          <Valor>T</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>3</SequencialLapela>
+          <SequencialItem>3</SequencialItem>
+          <Sequencial>14</Sequencial>
+          <Controle>cboExibirTitulo</Controle>
+          <Valor>S</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>3</SequencialLapela>
+          <SequencialItem>3</SequencialItem>
+          <Sequencial>15</Sequencial>
+          <Controle>cboPermiteInc</Controle>
+          <Valor>N</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>3</SequencialLapela>
+          <SequencialItem>3</SequencialItem>
+          <Sequencial>16</Sequencial>
+          <Controle>cboPermiteAlt</Controle>
+          <Valor>N</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>3</SequencialLapela>
+          <SequencialItem>3</SequencialItem>
+          <Sequencial>17</Sequencial>
+          <Controle>cboPermiteExc</Controle>
+          <Valor>N</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+      </LapelasItensValores>
+      <ParametrosValores>
+        <ConfiguracaoProcessoParametroValorExportacao>
+          <Sequencial>1</Sequencial>
+          <Controle>chkExibeCabecalho</Controle>
+          <Valor>N</Valor>
+        </ConfiguracaoProcessoParametroValorExportacao>
+      </ParametrosValores>
+    </ConfiguracaoProcessoExportacao>
+    <ConfiguracaoProcessoExportacao Codigo="25949">
       <Descricao>Alteração de Dados</Descricao>
       <TipoTela>SemTela</TipoTela>
       <Processo>ALTDADOAVRB</Processo>
@@ -4427,7 +4754,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
         </ConfiguracaoProcessoParametroValorExportacao>
       </ParametrosValores>
     </ConfiguracaoProcessoExportacao>
-    <ConfiguracaoProcessoExportacao Codigo="25939">
+    <ConfiguracaoProcessoExportacao Codigo="25950">
       <Descricao>Análise de Crédito</Descricao>
       <TipoTela>Lapela</TipoTela>
       <Processo>CNANMT</Processo>
@@ -4969,7 +5296,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
         </ConfiguracaoProcessoParametroValorExportacao>
       </ParametrosValores>
     </ConfiguracaoProcessoExportacao>
-    <ConfiguracaoProcessoExportacao Codigo="25940">
+    <ConfiguracaoProcessoExportacao Codigo="25951">
       <Descricao>Analise digitado X aberbado</Descricao>
       <TipoTela>SemTela</TipoTela>
       <Processo>ANVLDIGVLAVB</Processo>
@@ -4991,221 +5318,16 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
         </ConfiguracaoProcessoParametroValorExportacao>
       </ParametrosValores>
     </ConfiguracaoProcessoExportacao>
-    <ConfiguracaoProcessoExportacao Codigo="25941">
-      <Descricao>Análise Refinanciamento HY</Descricao>
+    <ConfiguracaoProcessoExportacao Codigo="25952">
+      <Descricao>Análise de Crédito </Descricao>
       <TipoTela>Lapela</TipoTela>
       <Processo>CNANMT</Processo>
-      <TituloTela>Análise Refinanciamento Com Crítica</TituloTela>
-      <TipoAlinhamento>Centro</TipoAlinhamento>
-      <UsuarioCadastro>gsilva22</UsuarioCadastro>
-      <UsuarioUltimaManutencao>gsilva22</UsuarioUltimaManutencao>
-      <DataCadastro>2024-08-27T00:00:00</DataCadastro>
-      <DataUltimaManutencao>2024-08-27T00:00:00</DataUltimaManutencao>
-      <Situacao>Ativo</Situacao>
-      <Lapelas>
-        <ConfiguracaoProcessoLapelaExportacao>
-          <Sequencial>1</Sequencial>
-          <Descricao>Análise Refinanciamento</Descricao>
-        </ConfiguracaoProcessoLapelaExportacao>
-      </Lapelas>
-      <LapelasItens>
-        <ConfiguracaoProcessoLapelaItemExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <Sequencial>1</Sequencial>
-          <PathUserControl>~/Lib/UserControl/Processo/UcDadosFinanciamento.ascx</PathUserControl>
-          <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfDadosFinanciamento.ascx</PathUserControlConfiguracao>
-        </ConfiguracaoProcessoLapelaItemExportacao>
-        <ConfiguracaoProcessoLapelaItemExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <Sequencial>2</Sequencial>
-          <PathUserControl>~/Lib/UserControl/Processo/UcDadosReneRefin.ascx</PathUserControl>
-          <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfDadosReneRefin.ascx</PathUserControlConfiguracao>
-        </ConfiguracaoProcessoLapelaItemExportacao>
-        <ConfiguracaoProcessoLapelaItemExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <Sequencial>3</Sequencial>
-          <PathUserControl>~/Lib/UserControl/Processo/UcObs.ascx</PathUserControl>
-          <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfObs.ascx</PathUserControlConfiguracao>
-        </ConfiguracaoProcessoLapelaItemExportacao>
-        <ConfiguracaoProcessoLapelaItemExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <Sequencial>4</Sequencial>
-          <PathUserControl>~/Lib/UserControl/Processo/UcAprRepPenVol.ascx</PathUserControl>
-          <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfAprRepPenVol.ascx</PathUserControlConfiguracao>
-        </ConfiguracaoProcessoLapelaItemExportacao>
-      </LapelasItens>
-      <LapelasItensValores>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>1</SequencialItem>
-          <Sequencial>1</Sequencial>
-          <Controle>txtTitulo</Controle>
-          <Valor>Dados do Financiamento</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>1</SequencialItem>
-          <Sequencial>2</Sequencial>
-          <Controle>cboAlinhaPara</Controle>
-          <Valor>C</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>1</SequencialItem>
-          <Sequencial>3</Sequencial>
-          <Controle>cboExibirPara</Controle>
-          <Valor>I</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>1</SequencialItem>
-          <Sequencial>4</Sequencial>
-          <Controle>cboExibirTitulo</Controle>
-          <Valor>S</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>2</SequencialItem>
-          <Sequencial>5</Sequencial>
-          <Controle>txtTitulo</Controle>
-          <Valor>Dados do Refinanciamento</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>2</SequencialItem>
-          <Sequencial>6</Sequencial>
-          <Controle>cboAlinhaPara</Controle>
-          <Valor>C</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>2</SequencialItem>
-          <Sequencial>7</Sequencial>
-          <Controle>cboExibirPara</Controle>
-          <Valor>I</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>2</SequencialItem>
-          <Sequencial>8</Sequencial>
-          <Controle>cboExibirTitulo</Controle>
-          <Valor>S</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>3</SequencialItem>
-          <Sequencial>9</Sequencial>
-          <Controle>txtTitulo</Controle>
-          <Valor>Observações</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>3</SequencialItem>
-          <Sequencial>10</Sequencial>
-          <Controle>cboAlinhaPara</Controle>
-          <Valor>C</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>3</SequencialItem>
-          <Sequencial>11</Sequencial>
-          <Controle>cboExibirPara</Controle>
-          <Valor>I</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>3</SequencialItem>
-          <Sequencial>12</Sequencial>
-          <Controle>cboExibirTitulo</Controle>
-          <Valor>S</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>3</SequencialItem>
-          <Sequencial>13</Sequencial>
-          <Controle>cboGravacaoPara</Controle>
-          <Valor>I</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>3</SequencialItem>
-          <Sequencial>14</Sequencial>
-          <Controle>dltItens</Controle>
-          <Valor>Origem3</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>3</SequencialItem>
-          <Sequencial>15</Sequencial>
-          <Controle>cboTpObsInterno</Controle>
-          <Valor>O</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>3</SequencialItem>
-          <Sequencial>16</Sequencial>
-          <Controle>cboTpObsExterno</Controle>
-          <Valor>A</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>3</SequencialItem>
-          <Sequencial>17</Sequencial>
-          <Controle>cboExibeBotao</Controle>
-          <Valor>S</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>3</SequencialItem>
-          <Sequencial>18</Sequencial>
-          <Controle>txtAltObs</Controle>
-          <Valor>140</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>3</SequencialItem>
-          <Sequencial>19</Sequencial>
-          <Controle>txtAltObsNew</Controle>
-          <Valor>140</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>3</SequencialItem>
-          <Sequencial>20</Sequencial>
-          <Controle>cboExibeTituloObs</Controle>
-          <Valor>N</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>4</SequencialItem>
-          <Sequencial>21</Sequencial>
-          <Controle>dltBotoes</Controle>
-          <Valor>Aprova|Pendente|Planilha|Reprova|Voltar</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-      </LapelasItensValores>
-      <ParametrosValores>
-        <ConfiguracaoProcessoParametroValorExportacao>
-          <Sequencial>1</Sequencial>
-          <Controle>chkExibeCabecalho</Controle>
-          <Valor>N</Valor>
-        </ConfiguracaoProcessoParametroValorExportacao>
-        <ConfiguracaoProcessoParametroValorExportacao>
-          <Sequencial>2</Sequencial>
-          <Controle>chkSolicitarMotivoAprovacao</Controle>
-          <Valor>N</Valor>
-        </ConfiguracaoProcessoParametroValorExportacao>
-      </ParametrosValores>
-    </ConfiguracaoProcessoExportacao>
-    <ConfiguracaoProcessoExportacao Codigo="25942">
-      <Descricao>Análise de Crédito</Descricao>
-      <TipoTela>Lapela</TipoTela>
-      <Processo>CNANMT</Processo>
-      <TituloTela>Análise de Crédito</TituloTela>
+      <TituloTela>Análise de Crédito </TituloTela>
       <TipoAlinhamento>Centro</TipoAlinhamento>
       <UsuarioCadastro>SUPERVISOR</UsuarioCadastro>
-      <UsuarioUltimaManutencao>GNOGUEIRA</UsuarioUltimaManutencao>
+      <UsuarioUltimaManutencao>TQI_AFERREIRA</UsuarioUltimaManutencao>
       <DataCadastro>2019-07-23T00:00:00</DataCadastro>
-      <DataUltimaManutencao>2022-12-28T00:00:00</DataUltimaManutencao>
+      <DataUltimaManutencao>2021-08-03T00:00:00</DataUltimaManutencao>
       <Situacao>Ativo</Situacao>
       <Lapelas>
         <ConfiguracaoProcessoLapelaExportacao>
@@ -5249,42 +5371,48 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
         <ConfiguracaoProcessoLapelaItemExportacao>
           <SequencialLapela>1</SequencialLapela>
           <Sequencial>5</Sequencial>
-          <PathUserControl>~/Lib/UserControl/Processo/UcDadosReneRefin.ascx</PathUserControl>
-          <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfDadosReneRefin.ascx</PathUserControlConfiguracao>
-        </ConfiguracaoProcessoLapelaItemExportacao>
-        <ConfiguracaoProcessoLapelaItemExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <Sequencial>6</Sequencial>
-          <PathUserControl>~/Lib/UserControl/Processo/UcDadosRiscoOnLine.ascx</PathUserControl>
-          <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfRiscoOnLine.ascx</PathUserControlConfiguracao>
-        </ConfiguracaoProcessoLapelaItemExportacao>
-        <ConfiguracaoProcessoLapelaItemExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <Sequencial>7</Sequencial>
-          <PathUserControl>~/Lib/UserControl/Processo/UcAprRepPenVol.ascx</PathUserControl>
-          <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfAprRepPenVol.ascx</PathUserControlConfiguracao>
-        </ConfiguracaoProcessoLapelaItemExportacao>
-        <ConfiguracaoProcessoLapelaItemExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <Sequencial>8</Sequencial>
           <PathUserControl>~/Lib/UserControl/Processo/UcDadosCheckList.ascx</PathUserControl>
           <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfCheckList.ascx</PathUserControlConfiguracao>
         </ConfiguracaoProcessoLapelaItemExportacao>
         <ConfiguracaoProcessoLapelaItemExportacao>
           <SequencialLapela>1</SequencialLapela>
-          <Sequencial>9</Sequencial>
+          <Sequencial>6</Sequencial>
+          <PathUserControl>~/Lib/UserControl/Processo/UcDadosReneRefin.ascx</PathUserControl>
+          <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfDadosReneRefin.ascx</PathUserControlConfiguracao>
+        </ConfiguracaoProcessoLapelaItemExportacao>
+        <ConfiguracaoProcessoLapelaItemExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <Sequencial>7</Sequencial>
+          <PathUserControl>~/Lib/UserControl/Processo/UcDadosRiscoOnLine.ascx</PathUserControl>
+          <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfRiscoOnLine.ascx</PathUserControlConfiguracao>
+        </ConfiguracaoProcessoLapelaItemExportacao>
+        <ConfiguracaoProcessoLapelaItemExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <Sequencial>8</Sequencial>
           <PathUserControl>~/Lib/UserControl/Processo/UcObs.ascx</PathUserControl>
           <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfObs.ascx</PathUserControlConfiguracao>
         </ConfiguracaoProcessoLapelaItemExportacao>
         <ConfiguracaoProcessoLapelaItemExportacao>
-          <SequencialLapela>2</SequencialLapela>
+          <SequencialLapela>1</SequencialLapela>
+          <Sequencial>9</Sequencial>
+          <PathUserControl>~/Lib/UserControl/Processo/UcAprRepPenVol.ascx</PathUserControl>
+          <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfAprRepPenVol.ascx</PathUserControlConfiguracao>
+        </ConfiguracaoProcessoLapelaItemExportacao>
+        <ConfiguracaoProcessoLapelaItemExportacao>
+          <SequencialLapela>1</SequencialLapela>
           <Sequencial>10</Sequencial>
+          <PathUserControl>~/Lib/UserControl/Processo/UcFormalizadorExterno.ascx</PathUserControl>
+          <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfFormalizadorExterno.ascx</PathUserControlConfiguracao>
+        </ConfiguracaoProcessoLapelaItemExportacao>
+        <ConfiguracaoProcessoLapelaItemExportacao>
+          <SequencialLapela>2</SequencialLapela>
+          <Sequencial>11</Sequencial>
           <PathUserControl>~/Lib/UserControl/Processo/UcDadosDelphos.ascx</PathUserControl>
           <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfDadosDelphos.ascx</PathUserControlConfiguracao>
         </ConfiguracaoProcessoLapelaItemExportacao>
         <ConfiguracaoProcessoLapelaItemExportacao>
           <SequencialLapela>3</SequencialLapela>
-          <Sequencial>11</Sequencial>
+          <Sequencial>12</Sequencial>
           <PathUserControl>~/Lib/UserControl/Processo/UcSimilaridadeDados.ascx</PathUserControl>
           <PathUserControlConfiguracao>~/Lib/UserControl/Processo/Configuracao/UcConfSimilaridadeDados.ascx</PathUserControlConfiguracao>
         </ConfiguracaoProcessoLapelaItemExportacao>
@@ -5407,7 +5535,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
           <SequencialItem>4</SequencialItem>
           <Sequencial>17</Sequencial>
           <Controle>cboExibirPara</Controle>
-          <Valor>I</Valor>
+          <Valor>T</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
@@ -5421,7 +5549,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
           <SequencialItem>5</SequencialItem>
           <Sequencial>19</Sequencial>
           <Controle>txtTitulo</Controle>
-          <Valor>Dados Rene/Refin</Valor>
+          <Valor>Documentos do cliente</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
@@ -5446,323 +5574,414 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>6</SequencialItem>
+          <SequencialItem>5</SequencialItem>
           <Sequencial>23</Sequencial>
-          <Controle>txtTitulo</Controle>
-          <Valor>Dados Risco Online</Valor>
+          <Controle>cboTipoCheckList</Controle>
+          <Valor>C</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>5</SequencialItem>
+          <Sequencial>24</Sequencial>
+          <Controle>cboTpExibicao</Controle>
+          <Valor>Todos</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>5</SequencialItem>
+          <Sequencial>25</Sequencial>
+          <Controle>cboExibeBtnAdicionais</Controle>
+          <Valor>N</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>5</SequencialItem>
+          <Sequencial>26</Sequencial>
+          <Controle>cboExibeBtnCondicionais</Controle>
+          <Valor>N</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>5</SequencialItem>
+          <Sequencial>27</Sequencial>
+          <Controle>cboSomenteLeitura</Controle>
+          <Valor>N</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>5</SequencialItem>
+          <Sequencial>28</Sequencial>
+          <Controle>cboAnexaArquivo</Controle>
+          <Valor>S</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>5</SequencialItem>
+          <Sequencial>29</Sequencial>
+          <Controle>cboPermiteExclusao</Controle>
+          <Valor>N</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>5</SequencialItem>
+          <Sequencial>30</Sequencial>
+          <Controle>cboMarcarObrigatorios</Controle>
+          <Valor>S</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>5</SequencialItem>
+          <Sequencial>31</Sequencial>
+          <Controle>cboPermiteDigitalizar</Controle>
+          <Valor>N</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>5</SequencialItem>
+          <Sequencial>32</Sequencial>
+          <Controle>cboDocumentosCache</Controle>
+          <Valor>N</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>5</SequencialItem>
+          <Sequencial>33</Sequencial>
+          <Controle>cboExibirAnexarDocumentos</Controle>
+          <Valor>N</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>5</SequencialItem>
+          <Sequencial>34</Sequencial>
+          <Controle>cboExtrairDadosTelaAnexarDocumentos</Controle>
+          <Valor>N</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>5</SequencialItem>
+          <Sequencial>35</Sequencial>
+          <Controle>cboHabilitaTipAut</Controle>
+          <Valor>N</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>5</SequencialItem>
+          <Sequencial>36</Sequencial>
+          <Controle>cboObrigaTipAut</Controle>
+          <Valor>N</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>5</SequencialItem>
+          <Sequencial>37</Sequencial>
+          <Controle>txtTimeoutTipExt</Controle>
+          <Valor />
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>6</SequencialItem>
-          <Sequencial>24</Sequencial>
+          <Sequencial>38</Sequencial>
+          <Controle>txtTitulo</Controle>
+          <Valor>Dados Rene/Refin</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>6</SequencialItem>
+          <Sequencial>39</Sequencial>
           <Controle>cboAlinhaPara</Controle>
           <Valor>C</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>6</SequencialItem>
-          <Sequencial>25</Sequencial>
+          <Sequencial>40</Sequencial>
           <Controle>cboExibirPara</Controle>
           <Valor>T</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>6</SequencialItem>
-          <Sequencial>26</Sequencial>
+          <Sequencial>41</Sequencial>
           <Controle>cboExibirTitulo</Controle>
           <Valor>S</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>7</SequencialItem>
-          <Sequencial>27</Sequencial>
-          <Controle>dltBotoes</Controle>
-          <Valor>Alterar|Aprova|Pendente|Planilha|Reprova|Voltar</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>8</SequencialItem>
-          <Sequencial>28</Sequencial>
+          <Sequencial>42</Sequencial>
           <Controle>txtTitulo</Controle>
-          <Valor>Anexos</Valor>
+          <Valor>Dados Risco Online</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>8</SequencialItem>
-          <Sequencial>29</Sequencial>
+          <SequencialItem>7</SequencialItem>
+          <Sequencial>43</Sequencial>
           <Controle>cboAlinhaPara</Controle>
           <Valor>C</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>8</SequencialItem>
-          <Sequencial>30</Sequencial>
+          <SequencialItem>7</SequencialItem>
+          <Sequencial>44</Sequencial>
           <Controle>cboExibirPara</Controle>
           <Valor>T</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>8</SequencialItem>
-          <Sequencial>31</Sequencial>
+          <SequencialItem>7</SequencialItem>
+          <Sequencial>311</Sequencial>
           <Controle>cboExibirTitulo</Controle>
           <Valor>S</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>8</SequencialItem>
-          <Sequencial>32</Sequencial>
-          <Controle>cboTipoCheckList</Controle>
+          <Sequencial>47</Sequencial>
+          <Controle>cboAlinhaPara</Controle>
           <Valor>C</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>8</SequencialItem>
-          <Sequencial>33</Sequencial>
-          <Controle>cboTpExibicao</Controle>
-          <Valor>Todos</Valor>
+          <Sequencial>48</Sequencial>
+          <Controle>cboExibirPara</Controle>
+          <Valor>T</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>8</SequencialItem>
-          <Sequencial>34</Sequencial>
-          <Controle>cboExibeBtnAdicionais</Controle>
-          <Valor>N</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>8</SequencialItem>
-          <Sequencial>35</Sequencial>
-          <Controle>cboExibeBtnCondicionais</Controle>
-          <Valor>N</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>8</SequencialItem>
-          <Sequencial>36</Sequencial>
-          <Controle>cboSomenteLeitura</Controle>
+          <Sequencial>49</Sequencial>
+          <Controle>cboExibirTitulo</Controle>
           <Valor>S</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>8</SequencialItem>
-          <Sequencial>37</Sequencial>
-          <Controle>cboAnexaArquivo</Controle>
-          <Valor>N</Valor>
+          <Sequencial>50</Sequencial>
+          <Controle>cboGravacaoPara</Controle>
+          <Valor>T</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>8</SequencialItem>
-          <Sequencial>38</Sequencial>
-          <Controle>cboPermiteExclusao</Controle>
-          <Valor>N</Valor>
+          <Sequencial>51</Sequencial>
+          <Controle>dltItens</Controle>
+          <Valor>A|C|CC|CI|CL|E|G|I|IN|J|K|L|LocalResidenciaAvalista1|LocalResidenciaAvalista2|LocalResidenciaCliente|LocalResidenciaConjuge|LocalTrabalhoAvalista1|LocalTrabalhoAvalista2|LocalTrabalhoCliente|LocalTrabalhoConjuge|M|MTORG2|MTORG3|N|O|Origem2|Origem3|P|ProcedenciasAvalista1|ProcedenciasAvalista2|ProcedenciasCliente|ProcedenciasConjuge|R|RC|RE|ReferenciaBancariaAvalista1|ReferenciaBancariaAvalista2|ReferenciaBancariaCliente|ReferenciaBancariaConjuge|ReferenciaPessoalAvalista1|ReferenciaPessoalAvalista2|ReferenciaPessoalCliente|ReferenciaPessoalConjuge|RetornoSPCACP|S|SPCAvalista1|SPCAvalista2|SPCCliente|SPCConjuge|SerasaAvalista1|SerasaAvalista2|SerasaCliente|SerasaConjuge|SinalizaUseAutosAvalista1|SinalizaUseAutosAvalista2|SinalizaUseAutosCliente|SinalizaUseAutosConjuge|SisBacenAvalista1|SisBacenAvalista2|SisBacenCliente|SisBacenConjuge|T|U|V|Y|Z</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>8</SequencialItem>
-          <Sequencial>39</Sequencial>
-          <Controle>cboMarcarObrigatorios</Controle>
-          <Valor>N</Valor>
+          <Sequencial>52</Sequencial>
+          <Controle>cboTpObsInterno</Controle>
+          <Valor>O</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>8</SequencialItem>
-          <Sequencial>40</Sequencial>
-          <Controle>cboPermiteDigitalizar</Controle>
-          <Valor>N</Valor>
+          <Sequencial>53</Sequencial>
+          <Controle>cboTpObsExterno</Controle>
+          <Valor>A</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>8</SequencialItem>
-          <Sequencial>41</Sequencial>
-          <Controle>cboDocumentosCache</Controle>
-          <Valor>N</Valor>
+          <Sequencial>54</Sequencial>
+          <Controle>cboExibeBotao</Controle>
+          <Valor>S</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>8</SequencialItem>
-          <Sequencial>42</Sequencial>
-          <Controle>cboExibirAnexarDocumentos</Controle>
-          <Valor>N</Valor>
+          <Sequencial>55</Sequencial>
+          <Controle>txtAltObs</Controle>
+          <Valor>140</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>8</SequencialItem>
-          <Sequencial>43</Sequencial>
-          <Controle>cboExtrairDadosTelaAnexarDocumentos</Controle>
-          <Valor>N</Valor>
+          <Sequencial>56</Sequencial>
+          <Controle>txtAltObsNew</Controle>
+          <Valor>140</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>8</SequencialItem>
-          <Sequencial>44</Sequencial>
-          <Controle>cboHabilitaTipAut</Controle>
-          <Valor>N</Valor>
+          <Sequencial>57</Sequencial>
+          <Controle>cboExibeTituloObs</Controle>
+          <Valor>S</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>8</SequencialItem>
-          <Sequencial>45</Sequencial>
-          <Controle>cboObrigaTipAut</Controle>
-          <Valor>N</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>8</SequencialItem>
-          <Sequencial>46</Sequencial>
-          <Controle>txtTimeoutTipExt</Controle>
-          <Valor />
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>9</SequencialItem>
-          <Sequencial>47</Sequencial>
+          <Sequencial>312</Sequencial>
           <Controle>txtTitulo</Controle>
           <Valor>Observações</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>1</SequencialLapela>
           <SequencialItem>9</SequencialItem>
-          <Sequencial>48</Sequencial>
-          <Controle>cboAlinhaPara</Controle>
-          <Valor>C</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>9</SequencialItem>
-          <Sequencial>49</Sequencial>
-          <Controle>cboExibirPara</Controle>
-          <Valor>T</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>9</SequencialItem>
-          <Sequencial>50</Sequencial>
-          <Controle>cboExibirTitulo</Controle>
-          <Valor>S</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>9</SequencialItem>
-          <Sequencial>51</Sequencial>
-          <Controle>cboGravacaoPara</Controle>
-          <Valor>T</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>9</SequencialItem>
-          <Sequencial>52</Sequencial>
-          <Controle>dltItens</Controle>
-          <Valor>A|C|CC|CI|CL|E|G|I|IN|J|K|L|LocalResidenciaAvalista1|LocalResidenciaAvalista2|LocalResidenciaCliente|LocalResidenciaConjuge|LocalTrabalhoAvalista1|LocalTrabalhoAvalista2|LocalTrabalhoCliente|LocalTrabalhoConjuge|M|MTORG2|MTORG3|N|O|Origem2|Origem3|P|ProcedenciasAvalista1|ProcedenciasAvalista2|ProcedenciasCliente|ProcedenciasConjuge|R|RC|RE|ReferenciaBancariaAvalista1|ReferenciaBancariaAvalista2|ReferenciaBancariaCliente|ReferenciaBancariaConjuge|ReferenciaPessoalAvalista1|ReferenciaPessoalAvalista2|ReferenciaPessoalCliente|ReferenciaPessoalConjuge|RetornoSPCACP|S|SPCAvalista1|SPCAvalista2|SPCCliente|SPCConjuge|SerasaAvalista1|SerasaAvalista2|SerasaCliente|SerasaConjuge|SinalizaUseAutosAvalista1|SinalizaUseAutosAvalista2|SinalizaUseAutosCliente|SinalizaUseAutosConjuge|SisBacenAvalista1|SisBacenAvalista2|SisBacenCliente|SisBacenConjuge|T|U|V|Y|Z</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>9</SequencialItem>
-          <Sequencial>53</Sequencial>
-          <Controle>cboTpObsInterno</Controle>
-          <Valor>O</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>9</SequencialItem>
-          <Sequencial>54</Sequencial>
-          <Controle>cboTpObsExterno</Controle>
-          <Valor>A</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>9</SequencialItem>
-          <Sequencial>55</Sequencial>
-          <Controle>cboExibeBotao</Controle>
-          <Valor>S</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>9</SequencialItem>
-          <Sequencial>56</Sequencial>
-          <Controle>txtAltObs</Controle>
-          <Valor>140</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>9</SequencialItem>
-          <Sequencial>57</Sequencial>
-          <Controle>txtAltObsNew</Controle>
-          <Valor>140</Valor>
-        </ConfiguracaoProcessoLapelaItemValorExportacao>
-        <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>1</SequencialLapela>
-          <SequencialItem>9</SequencialItem>
           <Sequencial>58</Sequencial>
-          <Controle>cboExibeTituloObs</Controle>
-          <Valor>S</Valor>
+          <Controle>dltBotoes</Controle>
+          <Valor>Alterar|Aprova|Pendente|Planilha|Reprova|Voltar</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>2</SequencialLapela>
+          <SequencialLapela>1</SequencialLapela>
           <SequencialItem>10</SequencialItem>
           <Sequencial>59</Sequencial>
           <Controle>txtTitulo</Controle>
-          <Valor>DADOS DELPHOS</Valor>
+          <Valor>Formalizador Externo</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>2</SequencialLapela>
+          <SequencialLapela>1</SequencialLapela>
           <SequencialItem>10</SequencialItem>
           <Sequencial>60</Sequencial>
           <Controle>cboAlinhaPara</Controle>
           <Valor>C</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>2</SequencialLapela>
+          <SequencialLapela>1</SequencialLapela>
           <SequencialItem>10</SequencialItem>
           <Sequencial>61</Sequencial>
           <Controle>cboExibirPara</Controle>
           <Valor>T</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>2</SequencialLapela>
+          <SequencialLapela>1</SequencialLapela>
           <SequencialItem>10</SequencialItem>
           <Sequencial>62</Sequencial>
           <Controle>cboExibirTitulo</Controle>
           <Valor>S</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
-          <SequencialLapela>2</SequencialLapela>
+          <SequencialLapela>1</SequencialLapela>
           <SequencialItem>10</SequencialItem>
           <Sequencial>63</Sequencial>
+          <Controle>cmbSomenteLeitura</Controle>
+          <Valor>false</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>10</SequencialItem>
+          <Sequencial>64</Sequencial>
+          <Controle>cmbPermiteExcluir</Controle>
+          <Valor>true</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>10</SequencialItem>
+          <Sequencial>65</Sequencial>
+          <Controle>cmbColetaPresencial</Controle>
+          <Valor>false</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>10</SequencialItem>
+          <Sequencial>66</Sequencial>
+          <Controle>cmbColetaRemota</Controle>
+          <Valor>true</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>10</SequencialItem>
+          <Sequencial>67</Sequencial>
+          <Controle>cmbTipoExibir</Controle>
+          <Valor>todos</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>10</SequencialItem>
+          <Sequencial>68</Sequencial>
+          <Controle>txtExibir</Controle>
+          <Valor />
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>10</SequencialItem>
+          <Sequencial>69</Sequencial>
+          <Controle>cmbCriticarItens</Controle>
+          <Valor>false</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>10</SequencialItem>
+          <Sequencial>70</Sequencial>
+          <Controle>txtCriticar</Controle>
+          <Valor />
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>1</SequencialLapela>
+          <SequencialItem>10</SequencialItem>
+          <Sequencial>71</Sequencial>
+          <Controle>cmbFinalizar</Controle>
+          <Valor>false</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>2</SequencialLapela>
+          <SequencialItem>11</SequencialItem>
+          <Sequencial>72</Sequencial>
+          <Controle>txtTitulo</Controle>
+          <Valor>DADOS DELPHOS</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>2</SequencialLapela>
+          <SequencialItem>11</SequencialItem>
+          <Sequencial>73</Sequencial>
+          <Controle>cboAlinhaPara</Controle>
+          <Valor>C</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>2</SequencialLapela>
+          <SequencialItem>11</SequencialItem>
+          <Sequencial>74</Sequencial>
+          <Controle>cboExibirPara</Controle>
+          <Valor>T</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>2</SequencialLapela>
+          <SequencialItem>11</SequencialItem>
+          <Sequencial>75</Sequencial>
+          <Controle>cboExibirTitulo</Controle>
+          <Valor>S</Valor>
+        </ConfiguracaoProcessoLapelaItemValorExportacao>
+        <ConfiguracaoProcessoLapelaItemValorExportacao>
+          <SequencialLapela>2</SequencialLapela>
+          <SequencialItem>11</SequencialItem>
+          <Sequencial>76</Sequencial>
           <Controle>cboExibirHistorico</Controle>
           <Valor>S</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>2</SequencialLapela>
-          <SequencialItem>10</SequencialItem>
-          <Sequencial>64</Sequencial>
+          <SequencialItem>11</SequencialItem>
+          <Sequencial>77</Sequencial>
           <Controle>cboExibirLink</Controle>
           <Valor>S</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>3</SequencialLapela>
-          <SequencialItem>11</SequencialItem>
-          <Sequencial>65</Sequencial>
+          <SequencialItem>12</SequencialItem>
+          <Sequencial>78</Sequencial>
           <Controle>txtTitulo</Controle>
           <Valor>Similaridade de dados</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>3</SequencialLapela>
-          <SequencialItem>11</SequencialItem>
-          <Sequencial>66</Sequencial>
+          <SequencialItem>12</SequencialItem>
+          <Sequencial>79</Sequencial>
           <Controle>cboAlinhaPara</Controle>
           <Valor>E</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>3</SequencialLapela>
-          <SequencialItem>11</SequencialItem>
-          <Sequencial>67</Sequencial>
+          <SequencialItem>12</SequencialItem>
+          <Sequencial>80</Sequencial>
           <Controle>cboExibirPara</Controle>
           <Valor>T</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
         <ConfiguracaoProcessoLapelaItemValorExportacao>
           <SequencialLapela>3</SequencialLapela>
-          <SequencialItem>11</SequencialItem>
-          <Sequencial>68</Sequencial>
+          <SequencialItem>12</SequencialItem>
+          <Sequencial>81</Sequencial>
           <Controle>cboExibirTitulo</Controle>
           <Valor>S</Valor>
         </ConfiguracaoProcessoLapelaItemValorExportacao>
@@ -5780,7 +5999,7 @@ AND RKNRPROP = @nrprop and RKSTATUS='A'</CondicaoAprovada>
         </ConfiguracaoProcessoParametroValorExportacao>
       </ParametrosValores>
     </ConfiguracaoProcessoExportacao>
-    <ConfiguracaoProcessoExportacao Codigo="25943">
+    <ConfiguracaoProcessoExportacao Codigo="25955">
       <Descricao>Recálculo de Refinanciamento</Descricao>
       <TipoTela>SemTela</TipoTela>
       <Processo>RECALCREFIN</Processo>

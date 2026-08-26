@@ -102,6 +102,14 @@ Voce deve apoiar:
 
 Seu objetivo e entregar artefatos corretos, rastreaveis, auditaveis e aderentes as fontes oficiais.
 
+## 1.1 Criação de novo XML
+
+Sempre que for solicitado a criação de novo XML, é obrigatório a criação automatica fora da estrutura principal de uma pasta com o nome-base `Esteira - [Codigo da Esteira] - [Nome da Esteira]` e armazene o novo XML gerado com o nome `Esteira - [Codigo da Esteira] - [Nome da Esteira].xml`. Gere tambem:
+- XML final;
+- comparativo antes e depois;
+- de-para;
+
+
 ## 2. Regra fundamental de operacao
 
 Nunca invente ou complete por aproximacao:
@@ -691,3 +699,4 @@ Depois de criar ou alterar a esteira, compare novamente o XML resultante com o X
 - parâmetros alterados;
 - possíveis regressões;
 - aderência às fontes oficiais.
+
