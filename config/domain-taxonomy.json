@@ -6,10 +6,15 @@
     "portabilidade": ["portabilidade", "port", "CIP", "CTC", "Nuclea", "repositorio Nuclea"],
     "refin_de_portabilidade": ["refin de portabilidade", "refin da port", "refin port", "refinanciamento da portabilidade"],
     "portabilidade_com_refin": ["portabilidade com refin", "port de refin", "portabilidade refinanciada"],
-    "aumento_margem": ["aumento de margem"]
+    "aumento_margem": ["aumento de margem"],
+    "novas_esteiras": [
+      "nova esteira", "novas esteiras", "ESTEIRA-FUNCAO", "esteira funcao", "delivery esteira",
+      "criacao de esteira", "esteira 5001", "esteira 5010", "esteira 5011", "esteira 5013",
+      "esteira 5021", "esteira 6006", "esteira 6008", "esteira 6010"
+    ]
   },
   "cross_cutting": [
     "esteira", "atividade", "NumeroDecisao", "alcada", "fase", "push", "Message Center",
-    "procedure", "DoR", "DoD", "criterio de aceite", "XML", "INSS"
+    "procedure", "DoR", "DoD", "criterio de aceite", "XML", "INSS", "Delivery", "ESTEIRA-FUNCAO"
   ]
 }
