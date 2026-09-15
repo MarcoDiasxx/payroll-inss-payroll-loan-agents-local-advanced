@@ -101,7 +101,8 @@ class AtlassianClient:
             quoted = ",".join(f'"{p}"' for p in project_keys)
             clauses.insert(0, f"project in ({quoted})")
         jql = " AND ".join(clauses) + " ORDER BY updated DESC"
-        data = self._get("/rest/api/3/search", {"jql": jql, "maxResults": min(max_results, 100), "fields": "summary,status,updated,description,labels,issuetype"})
+        # /rest/api/3/search was deprecated by Atlassian (returns 410 Gone); use /rest/api/3/search/jql instead.
+        data = self._get("/rest/api/3/search/jql", {"jql": jql, "maxResults": min(max_results, 100), "fields": "summary,status,updated,description,labels,issuetype"})
         results = []
         for item in data.get("issues", []):
             f = item.get("fields", {})
