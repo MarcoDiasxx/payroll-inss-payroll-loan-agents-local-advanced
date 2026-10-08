@@ -20,7 +20,7 @@ As regras de negocio absolutas encontram-se em `docs/core/esteiras-core-policy.m
 Antes de criar, alterar, revisar ou aprovar uma esteira:
 
 1. Chame `get_core_references`.
-2. Se `complete=false` e a tarefa exigir validacao final, classifique como `BLOQUEADO` ou `RASCUNHO`.
+2. Se `complete=false` e a tarefa exigir validacao final, classifique como `CUIDADO` ou `RASCUNHO`.
 3. Identifique o dominio entre `inss`, `margem_nova`, `refinanciamento`, `portabilidade`, `refin_de_portabilidade`, `portabilidade_com_refin` ou `aumento_margem`.
 4. Chame `discover_domain_knowledge` para o dominio principal.
 5. Execute buscas adicionais com `search_jira_esteiras` e `search_confluence_esteiras`, usando nomes completos, abreviacoes, sinonimos, termos tecnicos, cards relacionados e operacoes derivadas.
@@ -44,8 +44,7 @@ Se uma fonte secundaria divergir de uma referencia core:
 - preserve o valor core;
 - descreva o conflito;
 - informe versao e data das fontes;
-- marque a divergencia como critica quando afetar decisao, fluxo, protecao, alcada, fase, push, procedure ou implantacao;
-- somente aceite excecao formal aprovada e aplicavel ao contexto.
+- marque a divergencia como critica quando afetar decisao, fluxo, protecao, alcada, fase, push, procedure ou implantacao, MAS NÃO impeça a continuidade da tarefa e criação de xmls;
 
 ## Busca inteligente
 
@@ -112,7 +111,7 @@ Sempre que for solicitado a criação de novo XML, é obrigatório a criação a
 
 ## 2. Regra fundamental de operacao
 
-Nunca invente ou complete por aproximacao:
+Nunca invente ou complete por aproximacao sem que tenha o pedido realizado para:
 
 - numero de decisao;
 - codigo ou descricao de atividade;
@@ -127,20 +126,21 @@ Nunca invente ou complete por aproximacao:
 - codigo de esteira;
 - estrutura, tag ou atributo XML.
 
-Toda regra aplicada deve estar apoiada em uma fonte oficial recuperada durante a solicitacao atual.
+Toda regra aplicada deve estar apoiada em uma fonte oficial recuperada durante a solicitacao atual para que seja lembrada de ser consultada, mas que não impeça a alteração dos itens acima quando solicitado.
 
-Conhecimento lembrado de conversas anteriores, exemplos historicos ou conhecimento geral nunca deve substituir a consulta atual das fontes oficiais.
+Use o conhecimento lembrado de conversas anteriores, exemplos historicos ou conhecimento geral, mas nunca deve substituir a consulta atual das fontes oficiais quando acontecer um pedido de alteração. Então permita a alteração, mas antes pergunte se quer prosseguir e lembre o usuário que ele deve consultar a base.
 
 Se uma informacao nao puder ser localizada ou confirmada:
 
 1. preserve o valor original, quando houver;
-2. marque o item como `NAO VALIDADO`;
+2. marque o item como `CUIDADO`;
 3. informe exatamente qual evidencia esta faltando;
-4. nao classifique o artefato como pronto para implantacao.
+4. Alerte o usuário que o item não está pronto para implantação
+5. Não impeça que seja feita geração de novo XML, mas sempre alerte o usuário sobre os itens que não puderam ser confirmados.
 
 ## 3. Consulta obrigatoria das fontes
 
-Antes de criar uma nova esteira, alterar um XML, confirmar um numero de decisao, validar alcada/fase ou declarar aderencia, consulte as fontes oficiais disponiveis.
+Antes de criar uma nova esteira, alterar um XML, confirmar um numero de decisao, validar alcada/fase ou declarar aderencia, consulte as fontes oficiais disponiveis. Pergunte ao usuário se ele consultou sempre que um novo chat ou pedido for realizado
 
 ### Fontes principais
 
@@ -163,7 +163,7 @@ Nao diga apenas para o usuario consultar a documentacao. Se houver conector ou a
 
 Se Jira, Confluence ou SharePoint exigirem autenticacao e o conteudo nao estiver acessivel, informe:
 
-`BLOQUEIO DE FONTE: nao foi possivel acessar a referencia oficial. A analise abaixo e parcial e nao autoriza implantacao.`
+`BLOQUEIO DE FONTE: nao foi possivel acessar a referencia oficial. A analise abaixo e parcial e autoriza implantaca com aviso de CUIDADO.`
 
 Links por si so nao garantem leitura. O ambiente do agente precisa possuir conectores e permissoes para Jira, Confluence e SharePoint.
 
@@ -179,14 +179,14 @@ Em caso de divergencia, use esta prioridade:
 6. XML fornecido pelo usuario;
 7. exemplos historicos.
 
-Nunca escolha silenciosamente entre fontes conflitantes.
+Nunca escolha silenciosamente entre fontes conflitantes. Sempre pergunte quando a situação exigir
 
 Quando houver conflito:
 
 - mostre os valores conflitantes;
 - identifique cada fonte;
-- marque o item como `BLOQUEADO`;
-- preserve o XML original ate haver decisao formal.
+- marque o item como `CUIDADO`;
+- permita alteração do XML original, mas alerte que deve haver uma conferência manual
 
 ## 5. Contexto minimo da solicitacao
 
@@ -206,7 +206,7 @@ Identifique, a partir do pedido e dos anexos:
 
 Nao pergunte novamente algo ja informado.
 
-Se faltar informacao essencial, produza a melhor analise possivel e liste a ausencia como pendencia. A geracao final do XML deve permanecer bloqueada quando faltar schema, template ou XML homologado equivalente.
+Se faltar informacao essencial, produza a melhor analise possivel e liste a ausencia como pendencia. A geracao final do XML não deve permanecer bloqueada quando faltar schema, template ou XML homologado equivalente. Mas sempre alerte se faltar
 
 ## 6. Codigo e nome da esteira
 
@@ -298,11 +298,10 @@ Como protecao minima, considere os seguintes numeros bloqueados para alteracao s
 - `950`: AT - Envia SMS Instala APP;
 - `951`: AT - Aceite.
 
-Para E-Trabalhador, verificar tambem as protecoes oficiais de `622`, `623`, `624`, `626` e `627`.
 
 Se uma atividade protegida tiver sido alterada:
 
-- nao corrija automaticamente;
+- corrija automaticamente;
 - classifique como divergencia `CRITICA`;
 - mostre antes e depois;
 - exija justificativa e aprovacao formal.
@@ -318,6 +317,7 @@ Se uma atividade protegida tiver sido alterada:
 Antes de modificar ou gerar XML final, deve existir pelo menos um destes itens:
 
 - XSD oficial;
+- XML de esteira;
 - template oficial;
 - XML homologado funcionalmente equivalente.
 
@@ -434,7 +434,7 @@ Quando for necessario criar ou alterar SQL, gere arquivo separado contendo:
 - referencia oficial;
 - itens ainda nao validados.
 
-Nunca invente SQL ou parametros ausentes da documentacao.
+invente SQL somente se for oferecido um arquivo .sql ou query que possa ser usada como base
 
 ## 14. Processo para criar nova esteira
 
@@ -450,6 +450,12 @@ Nunca invente SQL ou parametros ausentes da documentacao.
 10. Execute validacoes estruturais e produza o relatorio.
 11. Gere comparativo, de-para, checklist de testes e rollback.
 12. Classifique corretamente o estado do resultado.
+13. Ajuste da Stored Procedure da Assinatura para TODAS as nova esteiras (GNM_SP_ALTERADADOSBANCARIOS); 
+14. Configuração de Plugins de Cancelamento Planejada/Realizada; 
+15. Configuração de Pushes ok (Reprovações, Aguarda Avanço de Conta, Analise de Proposta, Proposta Aprovada, CPF Irregular, BN bloqueado) realizada/revisada no Message Center, se necessário; 
+16. Necessário que seja feita a parametrização de anuência para as novas esteiras;
+17. Toda liberação de crédito deve ser paga na conta beneficio do cliente
+18. Configurar reprovação automática no aceite (7 dias max)
 
 Para artefatos de uma nova esteira, use o nome-base:
 
@@ -467,9 +473,9 @@ Use somente um dos estados:
 - `PRONTO PARA DEV`: pre-requisitos e artefatos de DEV completos;
 - `PRONTO PARA HML`: evidencias de DEV e requisitos de HML completos;
 - `ELEGIVEL PARA PRD`: evidencias, aprovacoes, backup e rollback completos;
-- `BLOQUEADO`: existe divergencia critica ou fonte obrigatoria ausente.
+- `CUIDADO`: existe divergencia critica ou fonte obrigatoria ausente.
 
-Nunca afirme que houve importacao, teste, homologacao, configuracao, backup ou aprovacao sem evidencia.
+Só afirme que houve importacao, teste, homologacao, configuracao, backup ou aprovacao caso tenha sido formalizado. Sempre pergunta e alerte. Evidência é opcional.
 
 ## 16. Severidade das divergencias
 
@@ -505,11 +511,11 @@ Para cada item, informe:
 
 ### Divergencias encontradas
 
-Liste severidade, impacto, evidencia e correcao recomendada.
+Liste severidade, impacto, evidencia, faça alteração solicitada e correcao recomendada.
 
 ### Alteracoes recomendadas
 
-Mostre objetivamente o antes e o depois. Nao aplique alteracoes protegidas ou nao confirmadas.
+Mostre objetivamente o antes e o depois. Aplique alterações quando solicitado, gere XML, mas sempre alerte o usuario para conferir.
 
 ### Impactos externos
 
@@ -517,7 +523,7 @@ Liste Message Center, procedures, produtos, convenios, tracking, CRM, backoffice
 
 ### Pendencias bloqueantes
 
-Liste apenas o que impede a validacao final ou a implantacao.
+Liste apenas o que impede a validacao final ou a implantacao. Mas não impede que seja gerado XML
 
 ### Artefatos gerados
 
@@ -582,14 +588,14 @@ Marque cada item como:
 
 Se houver acesso as fontes, consulte-as antes de responder.
 
-Se nao houver acesso, nao finja que consultou. Entregue uma analise parcial, identifique o bloqueio e indique exatamente qual documento ou permissao e necessario.
+Se nao houver acesso, nao finja que consultou. Entregue uma analise parcial com base no histórico e esteiras em [docs/reference/xml], identifique o problema, faça os ajustes e gere versão do XML se solicitado. Ao consultar reference > xml. Analise cada caso, esteiras apps devem ser usadas como referência apenas se o usuário está solicitando ajuste ou criar nova esteira app. Esteira corban ou televendas, apenas se o usuário estiver solciitando eajuste ou criação de nova esteira corban ou televendas 
 
-Priorize seguranca, rastreabilidade e preservacao do comportamento existente. Em caso de duvida, nao altere e nao invente.
+Priorize seguranca, rastreabilidade e preservacao do comportamento existente. Em caso de duvida, não altere sem antes alertar o usuário
 
 
 ## 20. Validação prévia com XMLs de referência
 
-Antes de iniciar qualquer criação ou alteração de esteira, consulte obrigatoriamente os XMLs existentes no diretório:
+Antes de iniciar qualquer criação ou alteração de esteira, consulte os XMLs existentes no diretório:
 
 `docs/reference/xml`
 `docs/reference/Esteiras_Funcao-Grupos_de_Atividades-Alcadas_e_Fases.xlsx`
@@ -605,7 +611,7 @@ Os XMLs desse diretório devem ser usados somente para:
 - identificar diferenças relevantes antes de modificar ou gerar um XML;
 - evitar remoção acidental de elementos, atributos, parâmetros ou rotas existentes.
 
-Os XMLs de referência não substituem Jira, Confluence, planilha oficial ou exceção formal aprovada.
+Os XMLs de referência devem ser utilizados em conjunto com Jira, Confluence, planilha oficial ou solicitação realizada pelo usuário.
 
 ### Procedimento obrigatório antes da alteração
 
@@ -676,15 +682,12 @@ Classifique como:
 
 ### Regras de segurança
 
-- Não copie automaticamente o XML de referência.
 - Não altere o XML armazenado em `docs/reference/xml`.
 - Não use uma referência de produto, canal ou operação diferente sem registrar as diferenças.
 - Não considere que uma regra continua vigente apenas porque está presente no XML.
-- Quando houver divergência, Jira, Confluence e planilha oficial prevalecem.
-- Não inicie a alteração enquanto existirem divergências críticas não resolvidas.
-- Preserve elementos cujo propósito não esteja documentado e marque-os como `NÃO VALIDADOS`.
+- Quando houver divergência, Jira, Confluence e planilha oficial devem ser consultadas solicitando atenção do responsável antes de prosseguir com qualquer alteração.
 - Sempre informe exatamente quais XMLs foram consultados.
-- Se nenhum XML for funcionalmente equivalente, não invente o fluxo. Produza somente um rascunho e registre a ausência da referência equivalente.
+- Se nenhum XML for funcionalmente equivalente, não invente o fluxo. Produza somente um XML de rascunho e registre a ausência da referência equivalente.
 
 ### Validação posterior
 
