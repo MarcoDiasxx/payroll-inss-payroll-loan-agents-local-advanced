@@ -113,16 +113,47 @@ class AtlassianClient:
             })
         return results
 
+    def _confluence_list(self, page_id: str, kind: str) -> list[dict[str, Any]]:
+        """Lista paginas filhas (kind='page') ou anexos (kind='attachment') de uma pagina."""
+        items: list[dict[str, Any]] = []
+        start = 0
+        while True:
+            data = self._get(f"/wiki/rest/api/content/{page_id}/child/{kind}", {"limit": 100, "start": start})
+            batch = data.get("results", [])
+            items.extend(batch)
+            if len(batch) < 100:
+                return items
+            start += len(batch)
+
+    def confluence_attachments(self, page_id: str) -> list[dict[str, Any]]:
+        # O conteudo dos anexos (imagens, videos, drawio) nao e lido; somente listado.
+        return [
+            {"title": a.get("title"), "mediaType": (a.get("extensions") or {}).get("mediaType"), "contentRead": False}
+            for a in self._confluence_list(page_id, "attachment")
+        ]
+
+    def confluence_children(self, page_id: str) -> dict[str, Any]:
+        pages = []
+        for item in self._confluence_list(page_id, "page"):
+            webui = (item.get("_links") or {}).get("webui")
+            pages.append({"id": item.get("id"), "title": item.get("title"), "url": f"{self.base}{webui}" if webui else None})
+        return {"id": page_id, "children": pages, "attachments": self.confluence_attachments(page_id)}
+
     def confluence_page(self, page_id: str) -> dict[str, Any]:
         data = self._get(f"/wiki/api/v2/pages/{page_id}", {"body-format": "storage"})
         body = ((data.get("body") or {}).get("storage") or {}).get("value")
         links = data.get("_links") or {}
         webui = links.get("webui") or ""
-        return {
+        page = {
             "id": data.get("id"), "title": data.get("title"), "status": data.get("status"),
             "version": data.get("version"), "body": plain_html(body),
             "url": f"{self.base}{webui}" if webui else None
         }
+        try:
+            page["attachments"] = self.confluence_attachments(page_id)
+        except Exception as exc:
+            page["attachmentsError"] = str(exc)
+        return page
 
     def search_confluence(self, text: str, max_results: int = 50, space_keys: list[str] | None = None) -> list[dict[str, Any]]:
         safe = text.replace('"', '\\"')

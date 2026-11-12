@@ -53,8 +53,14 @@ def search_jira_esteiras(query: str, max_results: int = 30) -> list[dict[str, An
 
 @mcp.tool
 def get_confluence_page(page_id: str) -> dict[str, Any]:
-    """Abre uma pagina do Confluence pelo ID e retorna texto, versao e URL."""
+    """Abre uma pagina do Confluence pelo ID e retorna texto, versao, URL e lista de anexos (conteudo dos anexos nao e lido)."""
     return client().confluence_page(page_id)
+
+
+@mcp.tool
+def get_confluence_children(page_id: str) -> dict[str, Any]:
+    """Lista as paginas filhas e os anexos de uma pagina do Confluence (anexos nao tem o conteudo lido)."""
+    return client().confluence_children(page_id)
 
 
 @mcp.tool

@@ -7,6 +7,26 @@
     {"type": "sharepoint_workbook", "env": "OFFICIAL_WORKBOOK_LOCAL_PATH", "purpose": "atividades, decisoes, alcadas, fases e protecoes"},
     {"type": "repository_policy", "path": "docs/core/esteiras-core-policy.md", "purpose": "regras obrigatorias do agente"}
   ],
+  "new_esteira_validation": {
+    "policy_section": "21",
+    "confluence": [
+      {"id": "77048546241", "purpose": "DoR - Definition of Ready para Esteiras Funcao"},
+      {"id": "77048546248", "purpose": "DoD - Definition of Done para Esteiras"},
+      {"id": "77534004754", "purpose": "Processo para criar/alterar/entregar esteira"},
+      {"id": "77137215636", "purpose": "Padronizacoes de codigos, atividades, descricoes e esteiras"}
+    ],
+    "confluence_children_of": "77048086725",
+    "confluence_child_criteria": [
+      {"id": "77188039828", "purpose": "Criterios - Esteiras de Decisao INSS"},
+      {"id": "77242106578", "purpose": "Modelo de Decisao Esteiras de INSS (modelos .drawio.xml anexados nao sao lidos)"},
+      {"id": "77317997145", "purpose": "Setup automatico de Pushes"},
+      {"id": "77137379589", "purpose": "Boas Praticas e Dicas de Validacoes de Esteiras"},
+      {"id": "77137379596", "purpose": "Scripts e Dicas de Acompanhamento Pos-Deploy"}
+    ],
+    "jira": [
+      {"id": "BRGN-3563", "purpose": "Criterios de aceite e checklist DoD para esteiras INSS"}
+    ]
+  },
   "source_order": [
     "formal_approved_exception",
     "core_confluence",

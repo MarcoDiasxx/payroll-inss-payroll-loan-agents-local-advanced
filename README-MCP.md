@@ -119,7 +119,7 @@ ATLASSIAN_EMAIL=seu-email-corporativo@empresa.com
 ATLASSIAN_API_TOKEN=COLE_UM_TOKEN_NOVO_AQUI
 
 JIRA_CORE_ISSUES=BRGN-3563
-CONFLUENCE_CORE_PAGE_IDS=77048086725
+CONFLUENCE_CORE_PAGE_IDS=77048086725,77048546241,77048546248,77534004754,77137215636
 JIRA_PROJECT_KEYS=BRGN
 CONFLUENCE_SPACE_KEYS=BRGN
 
@@ -302,7 +302,7 @@ Valide as fontes core sem alterar arquivos.
 Consulte:
 1. identidade Atlassian;
 2. Jira BRGN-3563;
-3. Confluence 77048086725;
+3. Confluence 77048086725 (Esteiras Função), 77048546241 (DoR), 77048546248 (DoD), 77534004754 (processo de entrega) e 77137215636 (padronizações);
 4. docs/core/esteiras-core-policy.md;
 5. docs/reference/Esteiras_Funcao-Grupos_de_Atividades-Alcadas_e_Fases.xlsx;
 6. XMLs em docs/reference/xml/.
@@ -316,7 +316,7 @@ A validação completa deve mostrar:
 ```text
 Identidade Atlassian: confirmada
 Jira core: disponível
-Confluence core: disponível
+Confluence core: disponível (5 páginas, incluindo DoR e DoD)
 Política core: disponível
 Planilha oficial: disponível
 XMLs de referência: disponíveis
@@ -522,7 +522,7 @@ O recurso não existe ou não está visível para a identidade. Confirme:
 
 ```dotenv
 JIRA_CORE_ISSUES=BRGN-3563
-CONFLUENCE_CORE_PAGE_IDS=77048086725
+CONFLUENCE_CORE_PAGE_IDS=77048086725,77048546241,77048546248,77534004754,77137215636
 ```
 
 ---

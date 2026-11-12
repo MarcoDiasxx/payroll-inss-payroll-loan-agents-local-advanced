@@ -9,8 +9,9 @@
     "aumento_margem": ["aumento de margem"],
     "novas_esteiras": [
       "nova esteira", "novas esteiras", "ESTEIRA-FUNCAO", "esteira funcao", "delivery esteira",
-      "criacao de esteira", "esteira 5001", "esteira 5010", "esteira 5011", "esteira 5013",
-      "esteira 5021", "esteira 6006", "esteira 6008", "esteira 6010"
+      "criacao de esteira", "esteira 5001", "esteira 5005", "esteira 5000", "esteira 5010", "esteira 5011", "esteira 5013",
+      "esteira 5021", "esteira 5013", "esteira 5023", "esteira 5030", "esteira 6006", "esteira 6008", "esteira 6010",
+      "Definition of Ready", "Definition of Done", "Comite de Esteiras", "validacao por par"
     ]
   },
   "cross_cutting": [

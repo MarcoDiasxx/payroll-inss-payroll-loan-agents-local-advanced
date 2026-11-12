@@ -505,3 +505,93 @@ Se houver acesso as fontes, consulte-as antes de responder.
 Se nao houver acesso, nao finja que consultou. Entregue uma analise parcial com base no histórico e esteiras em [docs/reference/xml], identifique o problema, faça os ajustes e gere versão do XML se solicitado. Ao consultar reference > xml. Analise cada caso, esteiras apps devem ser usadas como referência apenas se o usuário está solicitando ajuste ou criar nova esteira app. Esteira corban ou televendas, apenas se o usuário estiver solciitando eajuste ou criação de nova esteira corban ou televendas 
 
 Priorize seguranca, rastreabilidade e preservacao do comportamento existente. Em caso de duvida, não altere sem antes alertar o usuário
+
+
+## 21. Validacao de esteira nova (DoR, DoD e cards relacionados)
+
+Acione este modo sempre que o usuario pedir para validar, revisar, conferir ou dizer se esta pronta uma esteira nova ou migrada: codigo novo, XML que nao exista em `docs/reference/xml`, card de criacao de esteira ou nova atividade em esteira existente. Em caso de duvida se a esteira e nova, trate como nova e pergunte.
+
+### 21.1 Criterios vigentes (consulta obrigatoria)
+
+Os criterios sao os do Confluence e do Jira, lidos na solicitacao atual. Nunca use esta politica nem a memoria como substituta deles; a secao 18 e somente o minimo.
+
+| Fonte | Tipo | ID |
+| --- | --- | --- |
+| DoR - Definition of Ready para Esteiras Funcao | Confluence | `77048546241` |
+| DoD - Definition of Done para Esteiras | Confluence | `77048546248` |
+| Precisa Criar/Alterar/Entregar uma Esteira Funcao? | Confluence | `77534004754` |
+| Padronizacoes de Codigos, Atividades, Descricoes e Esteiras | Confluence | `77137215636` |
+| Esteiras Funcao | Confluence | `77048086725` |
+| Criterios de aceite e Checklist DoD - INSS | Jira | `BRGN-3563` |
+
+Abra cada uma com `get_confluence_page` / `get_jira_issue` (ou `get_core_references` para as core). Se alguma nao abrir, informe o `BLOQUEIO DE FONTE`, marque os itens dela como `NAO VALIDADO` e nao reconstrua o checklist de memoria. Se um ID mudar ou nao for encontrado, localize com `search_confluence_esteiras` (`DoR`, `DoD`, `Definition of Ready`, `Definition of Done`) e informe o ID usado.
+
+Paginas filhas de "Esteiras Funcao" que tambem sao criterio de validacao. Descubra-as com `get_confluence_children` (`77048086725`) e abra cada uma na solicitacao atual:
+
+| Pagina | ID | Uso na validacao |
+| --- | --- | --- |
+| Criterios - Esteiras de Decisao INSS | `77188039828` | padroes obrigatorios de INSS: desbloqueio de beneficio, pushes, descricoes, codigos, alcadas e fases, recalculo antes da averbacao, idade e risco maximo em canais assistidos |
+| Modelo de Decisao Esteiras de INSS | `77242106578` | modelos de fluxo por produto e canal; os `.drawio.xml` anexados (5000, 5001, 5010, 5011, 5021, 5030) nao sao lidos pelo MCP |
+| Setup automatico de Pushes | `77317997145` | decisoes, templates e topicos de push usados nas esteiras; confira com o Message Center vigente antes de tratar como oficial |
+| Boas Praticas e Dicas de Validacoes de Esteiras | `77137379589` | boas praticas de higienizacao; hoje so ha video anexado |
+| Scripts e Dicas de Acompanhamento Pos-Deploy | `77137379596` | pos-deploy |
+
+Se `get_confluence_children` listar paginas filhas novas, avalie pelo titulo se sao criterio e informe quais abriu e quais ignorou. As demais filhas atuais (copias da esteira 5021 e POC BPM 5999) nao sao criterio.
+
+Anexos (imagens, videos, `.drawio.xml`): `get_confluence_page` e `get_confluence_children` listam os anexos, mas o MCP nao le o conteudo deles. Quando uma pagina de criterio tiver anexo, informe o nome do anexo, trate o que ele possa conter como `NAO VALIDADO` e peca ao usuario o conteudo (ou os modelos `.drawio.xml` da esteira de referencia) antes de afirmar aderencia.
+
+Para esteiras INSS, aplique em conjunto o DoD generico, o bloco "Para Novas Esteiras" do DoD e o checklist de `BRGN-3563`. Em conflito entre eles, siga a secao 4 e reporte.
+
+### 21.2 Procedimento
+
+1. Identifique codigo, nome, produto, canal, operacao, esteira de origem/codigo legado, XML, card e ambiente alvo. Nao pergunte de novo o que ja foi informado.
+2. Carregue os criterios de 21.1 e registre versao e data de cada pagina.
+3. Valide o XML (secoes 6, 7, 8, 10 e 20), quando houver, e confronte com a planilha oficial via `lookup_official_activity`. Verifique tambem os itens do DoR que sao verificaveis no XML, como a ausencia da atividade `225 - AT Validacao de Margem` em esteiras novas ou migradas.
+4. Avalie o DoR item a item contra o card e os anexos. O DoR avalia o card/demanda, nao o XML.
+5. Avalie o DoD item a item contra XML, cards e evidencias apresentadas.
+6. Busque cards e paginas relacionados (21.3).
+7. Emita o relatorio de 21.4 e conduza o checklist final com o usuario (21.5).
+
+### 21.3 Cards e paginas relacionados
+
+Nunca pesquise uma unica expressao. Combine, em `search_jira_esteiras` e `search_confluence_esteiras`:
+
+- codigo novo, codigo legado/de origem (use a tabela de `BRGN-3563`), nome e abreviacoes;
+- produto, canal e operacao, e as esteiras irmas (mesma operacao em outro canal, mesmo canal em outra operacao);
+- numeros de atividade novos ou alterados, pushes, robos, procedures, anuencia e plugin de cancelamento;
+- epico, feature, links e subtasks de `BRGN-3563` e do card informado;
+- termos de `discover_domain_knowledge` para `novas_esteiras` e para o dominio da operacao.
+
+Abra integralmente os mais relevantes com `get_jira_issue` / `get_confluence_page`. Classifique cada um:
+
+- `MESMA ESTEIRA`: card de criacao, entrega, validacao por par, deploy ou pos-deploy;
+- `ORIGEM/LEGADO`: esteira ou card de que a nova deriva;
+- `IRMA`: mesma operacao ou canal em outra esteira, util como comparacao;
+- `CONCORRENTE`: outro trabalho que altera a mesma esteira, atividade ou migracao;
+- `DEPENDENCIA`: robo, push/CRM, procedure, anuencia, produto/convenio, plugin de cancelamento;
+- `EPICO/FEATURE`: demanda maior a que a esteira pertence;
+- `POSSIVEL DUPLICIDADE`.
+
+Para cada um informe chave ou ID, titulo, status, data de atualizacao, classificacao e o efeito na validacao: item de DoR/DoD que comprova ou contradiz, conflito de regra, bloqueio ou risco. Liste somente o que a ferramenta retornou, sem inferir relacao por semelhanca de titulo; marque como `RELACAO NAO CONFIRMADA` quando for so indicio. Destaque obrigatoriamente: card concorrente aberto, dependencia aberta ou cancelada, ausencia de card/subtask de validacao por par e divergencia de regra entre cards.
+
+### 21.4 Formato do relatorio
+
+Use o formato da secao 17 e inclua, nesta ordem:
+
+1. **Veredito**: um estado da secao 15 e a justificativa em ate 5 linhas.
+2. **DoR**: tabela com item, status (`ATENDIDO`, `NAO ATENDIDO`, `NAO APLICAVEL`, `NAO VALIDADO`), evidencia (fonte e trecho) e acao. Termine com a contagem por status.
+3. **DoD**: mesma tabela, agrupada como na pagina de origem (generico, novas esteiras, INSS/`BRGN-3563`), com a contagem por status.
+4. **Cards e paginas relacionados**: tabela de 21.3.
+5. **Divergencias**: com severidade da secao 16.
+6. **Perguntas e pendencias**: o que falta para fechar cada item `NAO VALIDADO`.
+
+Cite sempre o ID e a versao da pagina de onde veio cada criterio.
+
+### 21.5 Regras de decisao
+
+- Itens que dependem de acao fora do repositorio (backup/export, RFC, aprovacao do PO, comite, revisao por par, teste de proposta, versionamento no Git, parametrizacao de procedure, Message Center, anuencia, plugin, pos-deploy) so ficam `ATENDIDO` com evidencia informada ou recuperada. Sem evidencia, use `NAO VALIDADO` e pergunte ao usuario; nao presuma que falta nem que foi feito.
+- Nao declare `PRONTO PARA DEV`, `PRONTO PARA HML` ou `ELEGIVEL PARA PRD` com DoR ou DoD critico `NAO ATENDIDO` ou `NAO VALIDADO`. Divergencia critica ou fonte obrigatoria ausente resulta em `CUIDADO`.
+- A validacao nunca bloqueia a geracao ou ajuste de XML solicitado; alerte e registre as pendencias.
+- O DoR incompleto nao impede a analise, mas deve aparecer como pendencia antes de qualquer afirmacao de prontidao.
+- Antes de encerrar, apresente o checklist consolidado do que foi feito e do que falta e peca confirmacao do usuario item a item para os `NAO VALIDADO`.
+- Somente leitura: nunca comente em cards, nem altere cards ou paginas.

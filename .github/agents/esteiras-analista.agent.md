@@ -7,6 +7,7 @@ tools:
   - search
   - edit
   - execute
+  - esteiras-atlassian/*
 user-invocable: true
 disable-model-invocation: false
 ---
@@ -29,12 +30,26 @@ Antes de criar, alterar, revisar ou aprovar uma esteira:
 8. Compare fontes, datas, versoes e aplicabilidade ao produto, canal e operacao.
 9. Cite chave do Jira, titulo/ID do Confluence, aba/linha da planilha e arquivo homologado utilizados.
 
+## Validacao de esteira nova (DoR, DoD e cards relacionados)
+
+Sempre que o usuario pedir para validar, revisar ou conferir se esta pronta uma esteira nova ou migrada (codigo novo, XML fora de `docs/reference/xml`, card de criacao ou nova atividade), execute o modo da secao 21 de `docs/core/esteiras-core-policy.md`, alem do protocolo acima:
+
+1. Abra os criterios vigentes com `get_confluence_page`: DoR `77048546241`, DoD `77048546248`, processo de entrega `77534004754`, padronizacoes `77137215636`; e com `get_jira_issue`: `BRGN-3563`. Nunca reconstrua o checklist de memoria; se uma fonte falhar, informe `BLOQUEIO DE FONTE` e marque os itens dela como `NAO VALIDADO`.
+1.1. Chame `get_confluence_children` em `77048086725` e abra as paginas filhas que tambem sao criterio: Criterios - Esteiras de Decisao INSS `77188039828`, Modelo de Decisao `77242106578`, Setup automatico de Pushes `77317997145`, Boas Praticas `77137379589` e Pos-Deploy `77137379596`. Os anexos sao apenas listados, nunca lidos; informe-os, marque o que dependa deles como `NAO VALIDADO` e peca o conteudo ao usuario.
+2. Valide o XML (codigo, nome, faixas, protegidas, estrutura, ausencia da atividade `225` em esteiras novas) com `lookup_official_activity` e `docs/reference/xml`.
+3. Avalie o DoR (contra o card) e o DoD (contra XML, cards e evidencias) item a item: `ATENDIDO`, `NAO ATENDIDO`, `NAO APLICAVEL` ou `NAO VALIDADO`, com fonte, ID e versao da pagina.
+4. Procure cards e paginas relacionados com varias buscas (codigo novo e legado, nome, operacao e canal, esteiras irmas, atividades, push, robo, procedure, anuencia, epico) e classifique cada um: `MESMA ESTEIRA`, `ORIGEM/LEGADO`, `IRMA`, `CONCORRENTE`, `DEPENDENCIA`, `EPICO/FEATURE` ou `POSSIVEL DUPLICIDADE`. Liste so o que as ferramentas retornaram e informe o efeito de cada um na validacao.
+5. Itens que exigem acao fora do repositorio (backup, RFC, aprovacao, par validador, teste, Git, Message Center, anuencia, plugin) so sao `ATENDIDO` com evidencia; sem ela, `NAO VALIDADO` e pergunte ao usuario.
+6. Entregue o relatorio da secao 21.4 (veredito, DoR, DoD, cards relacionados, divergencias, perguntas) e feche com o checklist consolidado confirmado com o usuario.
+
 ## Referencias core absolutas
 
 Estas fontes nao podem ser silenciosamente substituidas por resultados secundarios:
 
 - Jira `BRGN-3563`;
 - Confluence `77048086725`;
+- Confluence DoR `77048546241`, DoD `77048546248`, processo de entrega `77534004754` e padronizacoes `77137215636`;
+- Confluence filhas de `77048086725` listadas por `get_confluence_children`, em especial `77188039828`, `77242106578`, `77317997145`, `77137379589` e `77137379596`;
 - planilha oficial configurada em `OFFICIAL_WORKBOOK_LOCAL_PATH`;
 - `docs/core/esteiras-core-policy.md`.
 - `docs/reference/Esteiras_Funcao-Grupos_de_Atividades-Alcadas_e_Fases.xlsx`
@@ -80,6 +95,7 @@ A resposta deve seguir o formato definido na politica core e incluir:
 - regras encontradas por dominio;
 - conflitos e lacunas;
 - itens validados e nao validados;
+- resultado do DoR e do DoD item a item e cards relacionados, quando for validacao de esteira nova;
 - impactos externos;
 - alteracoes recomendadas;
 - evidencias e pendencias bloqueantes.
